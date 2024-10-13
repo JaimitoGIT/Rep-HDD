@@ -1,0 +1,60 @@
+body{
+    background-color: #cdf5fc;
+    padding: 0px;
+}
+/*-------------------------------------------INICIO HEADER-------------------------------------------*/
+nav{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9fbfd;
+}
+.innav{
+    display: flex;
+    align-items: center;
+}
+.nav-Logo{
+    width: 220px;
+}
+.nav-Titulo{
+    height: 100px;
+}
+.nav-Boton{
+    height: 75px;
+}
+.banner{
+    width: 100%;
+}
+/*-------------------------------------------INICIO  MAIN-------------------------------------------*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-Box1 {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    background-color: #e9fbfd;
+}
+
+.box1-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 350px;
+}
+
+.box1-media img, .box1-media video {
+    height: 83%;
+    width: 100%;
+    object-fit: contain;
+}
+
