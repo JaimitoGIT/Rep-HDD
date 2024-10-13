@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 body{
     background-color: #cdf5fc;
     padding: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
+
 /*-------------------------------------------INICIO HEADER-------------------------------------------*/
 nav{
     display: flex;
@@ -10,6 +13,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: #e9fbfd;
+    border-radius: 15px;
 }
 .innav{
     display: flex;
@@ -21,8 +25,12 @@ nav{
 .nav-Titulo{
     height: 100px;
 }
-.nav-Boton{
+.nav-Boton {
     height: 75px;
+    transition: transform 0.3s ease;
+}
+.nav-Boton:hover {
+    transform: scale(1.1);
 }
 .banner{
     width: 100%;
@@ -42,8 +50,13 @@ main {
     grid-template-rows: 1fr;
     gap: 10px;
     background-color: #e9fbfd;
+    border-radius: 15px;
 }
-
+.main-inbox1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
 .box1-media {
     display: flex;
     justify-content: center;
@@ -54,7 +67,30 @@ main {
 
 .box1-media img, .box1-media video {
     height: 83%;
-    width: 100%;
     object-fit: contain;
+    border-radius: 15px;
+
 }
 
+/*-------------------------------------------INICIO  FOOTER-------------------------------------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.footer-Box1 {
+    display: grid;
+    grid-template-columns: 50% 20% 20% 10%;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: 50px 50px 50px;
+    gap: 2px;
+    background-color: #e9fbfd;
+    border-radius: 15px;
+}
+.footer-inbox1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
