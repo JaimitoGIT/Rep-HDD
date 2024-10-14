@@ -7,6 +7,14 @@ body{
 }
 
 /*-------------------------------------------INICIO HEADER-------------------------------------------*/
+img {
+    border-radius: px;
+}
+.img-m{
+    width: 300;
+    height: 300;
+    object-fit: contain;
+}
 nav{
     display: flex;
     width: 100%;
@@ -58,7 +66,7 @@ main {
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
     gap: 10px;
-    background-color: #8bd4dd;
+    background-color: #1ec7dd;
     border-radius: 15px;
 }
 .main-inbox1{
@@ -81,26 +89,26 @@ main {
     flex-direction: column;
     align-items: start;
     margin-bottom: 10px;
-  }
+}
   
-  label {
-    margin-right: 10px;
-  }
+label {
+margin-right: 10px;
+}
   
-  input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"] {
     margin-bottom: 10px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
-  }
+}
   
-  input[type="submit"] {
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-  }
+input[type="submit"] {
+padding: 5px 10px;
+border-radius: 5px;
+border: none;
+background-color: #4CAF50;
+color: white;
+}
 
 .box1-media {
     display: flex;
@@ -133,12 +141,24 @@ main {
 }
 .main4-bigbox.b {
     justify-content: center;
-    background-color: #2da8c7;
+    background-color: #57aabf;
+}
+.main4-bigbox.ba {
+    justify-content: center;
+    background-color: #57aabf;
+    flex-direction: column;
+    margin: 10px;
 }
 .main4-bigbox.c {   
     background-color: #e9fbfd;
     justify-content: center;
     box-sizing: border-box;
+}
+.main4-bigbox.ca {   
+    background-color: #e9fbfd;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
 }
 .main4-bigbox.d { 
     justify-content: center;
