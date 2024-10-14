@@ -67,13 +67,40 @@ main {
     align-items: center; 
     padding: 20px;   
 }
+.main-inbox1.a {
+    background-color: #e9fbfd;
+    border-radius: 15px;
+
+}
 .main-inbox1.b{
-    display: flex;
     flex-direction: row;
-    align-items: center; 
-    padding: 20px;  
     margin: 39; 
 }
+.main-inbox1.c {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+  }
 
 .box1-media {
     display: flex;
@@ -81,6 +108,13 @@ main {
     align-items: center;
     overflow: hidden;
     height: 350px;
+}
+.box1-media.b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 70px;
 }
 
 .box1-media img, .box1-media video {
@@ -122,11 +156,22 @@ main {
     border: 4px solid ;
     justify-content: space-between;
 }
+.main4-box1-b {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 15px;
+    flex: 1;
+    justify-content: space-between;
+}
 
 .main4-box1.central-box {
     flex: 2;
     border: 4px solid;
     margin: 10px;
+}
+.main4-box1.central-box.b{
+    flex: 1;
 }
 .main4-box1-media{
     display: flex;
