@@ -79,6 +79,10 @@ main {
     flex-direction: row;
     gap: 10px;
     border-radius: 15px;
+    margin: 10px;
+}
+.main4-bigbox.b {
+    background-color: #2da8c7;
 }
 .main4-box1 {
     display: flex;
@@ -94,6 +98,7 @@ main {
 .main4-box1.central-box {
     flex: 2;
     border: 4px solid;
+    margin: 10px;
 }
 .main4-box1-media{
     display: flex;
@@ -103,16 +108,18 @@ main {
     height: 100px;
 }
 .main4-box1-media img, .main4-box1-media video {
-    height: 83%;
+    height: 95%;
     object-fit: contain;
 
 }
-.main4-Box2 {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 2px;
-    background-color: #e9fbfd;
+.main4-textbox {
+    align-items: center;
+    border: 4px solid;
     border-radius: 15px;
+    gap: 100px;
+    margin: 100px;
+    background-color: #e9fbfd;
+    padding: 20px;
 }
 
 /*-------------------------------------------INICIO  FOOTER-------------------------------------------*/
