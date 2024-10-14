@@ -23,6 +23,7 @@ nav{
     align-items: center;
     background-color: #e9fbfd;
     border-radius: 15px;
+    padding: 10px;
 }
 .innav{
     display: flex;
@@ -43,6 +44,7 @@ nav{
 }
 .banner{
     width: 100%;
+    border-radius: 30px;
 }
 /*-------------------------------------------INICIO  MAIN-------------------------------------------*/
 main {
@@ -116,7 +118,7 @@ color: white;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 350px;
+    height: 355px;
 }
 .box1-media.b {
     display: flex;
