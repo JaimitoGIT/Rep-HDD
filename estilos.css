@@ -74,7 +74,8 @@ main {
 .main-inbox1{
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    justify-content: baseline; 
     padding: 20px;   
 }
 .main-inbox1.a {
@@ -115,7 +116,7 @@ color: white;
 .box1-media {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:baseline;
     align-items: center;
     overflow: hidden;
     height: 355px;
@@ -132,13 +133,12 @@ color: white;
     height: 83%;
     object-fit: contain;
     border-radius: 15px;
-
 }
 .box1-media video {
     height: 55%;
     object-fit: contain;
     border-radius: 15px;
-
+    margin: 10px;
 }
 /*-----------NOSOTROS-----------*/
 .main4-bigbox {
@@ -153,7 +153,7 @@ color: white;
     background-color: #57aabf;
 }
 .main4-bigbox.ba {
-    justify-content: center;
+    justify-content: baseline;
     background-color: #57aabf;
     flex-direction: column;
     margin-bottom: 1px;
