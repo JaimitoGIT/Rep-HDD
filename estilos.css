@@ -112,6 +112,7 @@ color: white;
 
 .box1-media {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -125,8 +126,14 @@ color: white;
     height: 70px;
 }
 
-.box1-media img, .box1-media video {
+.box1-media img {
     height: 83%;
+    object-fit: contain;
+    border-radius: 15px;
+
+}
+.box1-media video {
+    height: 55%;
     object-fit: contain;
     border-radius: 15px;
 
@@ -135,7 +142,7 @@ color: white;
 .main4-bigbox {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 1px;
     border-radius: 15px;
     margin: 10px;
 }
@@ -147,7 +154,7 @@ color: white;
     justify-content: center;
     background-color: #57aabf;
     flex-direction: column;
-    margin: 10px;
+    margin-bottom: 1px;
 }
 .main4-bigbox.c {   
     background-color: #e9fbfd;
