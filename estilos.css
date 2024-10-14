@@ -173,6 +173,10 @@ main {
 .main4-box1.central-box.b{
     flex: 1;
 }
+.main4-box1.central-box.c{
+    flex: 1;
+    flex-direction: column;
+}
 .main4-box1-media{
     display: flex;
     justify-content: center;

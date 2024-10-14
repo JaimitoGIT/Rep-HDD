@@ -21,71 +21,84 @@
 
         <main>
             <hr>
-            <form method="post">
-                <table align="center">
-                    <tr>
-                        <th> <label for="iname">Nombre:</label>                    </th>
-                        <th> <input id="iname" type="text" name="Nombre" value=""> </th>
-                        <th> </th>
-                    </tr>
-                    <tr>
-                        <th> <label for="isurname">Apellido:</label>                    </th>
-                        <th> <input id="isurname" type="text" name="Apellido" value=""> </th>
-                    </tr>
-                    <tr>
-                        <th> <label for="iuser">Usuario:</label>                    </th>
-                        <th> <input id="iuser" type="text" name="Usuario" value=""> </th>
-                    </tr>
-                    <tr>
-                        <th> <label for="ipass">Contraseña:</label>                       </th>
-                        <th> <input id="ipass"type="password" name="Contraseña" value=""> </th>
-                    </tr>
-                    <tr>
-                        <th> <label for="imail">Email:</label>                      </th>
-                        <th> <input id="imail" type="email" name="Correo" value=""> </th>
-                    </tr>
-                    <tr>
-                        <th> <label for="idate">Fecha de Nacimiento:</label>                          </th>
-                        <th> <input id="idate" type="date" name="fecha" value="" style="width: 43%;"> </th>
-                    </tr>
-                    <tr>
-                        <th> <label for="itel">Numero de Contacto:</label>          </th>
-                        <th> <input id="itel" type="tel" name="telefono" value="">  </th>
+            <div class="main4-bigbox">
+                <div class="main4-box1-b"></div>
+                <div class="main4-box1 central-box c">
+                    <form method="post">
+                        <div class="main4-bigbox">
+                            <div class="main-inbox1 b">
+                                <label for="iname">Nombre:</label><input id="iname" type="text" name="Nombre" value="">
+                            </div>
+                        </div>
+                        <div class="main4-bigbox">
+                            <div class="main-inbox1 b">
+                                <label for="isurname">Apellido:</label><input id="isurname" type="text" name="Apellido" value="">
+                            </div>
+                        </div>
+                        <div class="main4-bigbox">
+                            <div class="main-inbox1 b">
+                                <label for="iuser">Usuario:</label><input id="iuser" type="text" name="Usuario" value="">
+                            </div>
+                        </div>
+                        <div class="main4-bigbox">
+                            <div class="main-inbox1 b">
+                                <label for="ipass">Contraseña:</label><input id="ipass"type="password" name="Contraseña" value="">
+                            </div>
+                        </div>
+                        <div class="main4-bigbox">
+                            <div class="main-inbox1 b">
+                                <label for="imail">Email:</label><input id="imail" type="email" name="Correo" value="">
+                            </div>
+                        </div>
+                        <div class="main4-bigbox">
+                            <div class="main-inbox1 b">
+                                <label for="idate">Fecha de Nacimiento:</label><input id="idate" type="date" name="fecha" value="" style="width: 43%;">
+                            </div>
+                        </div>
+                        <div class="main4-bigbox">
+                            <div class="main-inbox1 b">
+                                <label for="itel">Numero de Contacto:</label><input id="itel" type="tel" name="telefono" value="">
+    
+                            </div>
+                        </div>
+                        <div class="main4-bigbox">
+                            <div class="main-inbox1 b">
+                                <label for="isex">Sexo:</label><select id="isex" name="sexos"><option value="Hombre">Hombre</option><option value="Mujer">Mujer</option>
+                            </div>
+                        </div>
                         
-                    </tr>
-                    <tr>
-                        <th> <label for="isex">Sexo:</label>                        </th>
-                        <th> <select id="isex" name="sexos"><option value="Hombre">Hombre</option><option value="Mujer">Mujer</option></th>
-                    </tr>
-                    <tr>
-                        <th> <p>Desea recibir:</p></th>
-                        <th> 
-                            <input type="checkbox" id="inov" name="preferencias" value="rnov">
-                            <label for="inov">Novedades</label>
-                            <input type="checkbox" id="inov2" name="preferencias" value="snov">
-                            <label for="inov2">Seguidos</label>
-                            <input type="checkbox" id="inov3" name="preferencias" value="anov">
-                            <label for="inov3">Actualizaciones</label>
-                            <input type="checkbox" id="inov4" name="preferencias" value="nnov">
-                            <label for="inov4">Nada</label>                                          
-                        </th>
-                    </tr>
-                    <tr>
-                        <th><label for="iimg">Seleccione una imagen de usuario</label> </th>
-                        <th><input type="file" id="iimg" name="profile img" accept=".jpg, .jpeg, .png">           </th>
-                    </tr>
-                    <tr>
-                        <th> <p><a href="" target="_blank"> ¿Aceptas los Terminos y Condiciones?</a></p>           </th>
-                        <th> <input id="iterm" type="radio" name="terminos" value=""><label for="iterm">Sí</label> <input id="itermn" type="radio" name="terminos" value="no_acepto"><label for="itermn">No</label></th>
-                        
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th> <input type="submit"></th>
-                    </tr>       
-                </table>
-                <hr>
-            </form>
+                        <div class="main4-bigbox">
+                            <div class="main-inbox1 b">
+                                <h1>Desea recibir:</h1>
+                                <input type="checkbox" id="inov" name="preferencias" value="rnov">
+                                <label for="inov">Novedades</label>
+                                <input type="checkbox" id="inov2" name="preferencias" value="snov">
+                                <label for="inov2">Seguidos</label>
+                                <input type="checkbox" id="inov3" name="preferencias" value="anov">
+                                <label for="inov3">Actualizaciones</label>
+                                <input type="checkbox" id="inov4" name="preferencias" value="nnov">
+                                <label for="inov4">Nada</label>
+                            </div>
+                        </div>
+                        <div class="main4-bigbox">
+                            <div class="main-inbox1 b">
+                                <label for="iimg">Seleccione una imagen de usuario</label><input type="file" id="iimg" name="profile img" accept=".jpg, .jpeg, .png">
+                            </div>
+                        </div>
+                        <div class="main4-bigbox">
+                            <div class="main-inbox1 b">
+                                <p><a href="" target="_blank"> ¿Aceptas los Terminos y Condiciones?</a></p><input id="iterm" type="radio" name="terminos" value=""><label for="iterm">Sí</label> <input id="itermn" type="radio" name="terminos" value="no_acepto"><label for="itermn">No</label>
+                            </div>
+                        </div>
+                        <div class="main4-bigbox">
+                            <div class="main-inbox1 b">
+                                <input type="submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="main4-box1-b"></div>
+            </div>
         </main>
         
         <footer>
