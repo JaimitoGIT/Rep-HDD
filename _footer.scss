@@ -1,15 +1,20 @@
+@mixin Flex-use($type,$direction){
+    display: $type;
+    flex-direction: $direction;
+}
+
+$bgcol:#2f9ec6;
+
 footer {
-    display: flex;
-    flex-direction: row;
+    @include Flex-use(flex,row);
     justify-content:space-around;
     height: 100px;
-    background-color: #2f9ec6;
+    background-color: $bgcol;
     border-radius: 15px;
     padding: 1px 15px;
 }
 .fila {
-    display: flex;
-    flex-direction: row;
+    @include Flex-use(flex,row);
 }
 .objeto-ft {
     margin: 5px;

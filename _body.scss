@@ -1,9 +1,10 @@
-    
+$color_l: #fcfcfc;
+$color_m: #9cd4f7;
 body{
-    background-color: #9cd4f7;
+    background-color: $color_m;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
-    color: #fcfcfc;
+    color: $color_l;
 }
 img {
     border-radius: 15px;

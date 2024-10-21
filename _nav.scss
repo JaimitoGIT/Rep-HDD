@@ -1,13 +1,22 @@
+$bgcol: #fcfcfc;
+$bgcol2:#cdeafc;
 @mixin ObjetoMg {
     margin: 5px;
 }
+@mixin Flex-use($type,$direction){
+    display: $type;
+    flex-direction: $direction;
+}
+@mixin Bg-style($background){
+    background-color: $background;
+    border-radius: 15px;
+}
+
 nav {
-    display: flex;
-    flex-direction: row;
+    @include Flex-use(flex,row);
     justify-content: space-between;
     height: 100px;
-    background-color: #fcfcfc;
-    border-radius: 15px;
+    @include Bg-style($bgcol);
     padding: 1px 15px;
 }
 .banner {
@@ -17,12 +26,11 @@ nav {
     object-fit: contain;
 }
 .fila {
-    display: flex;
-    flex-direction: row;
+    @include Flex-use(flex,row);
 }
 .objeto-nav.b {
     @include ObjetoMg();
-    background-color: #d1e7f5;
+    @include Bg-style($bgcol2);
     border-radius: 15px;
 }
 .objeto-nav.c {
