@@ -1,7 +1,4 @@
-@mixin Flex-use($type,$direction){
-    display: $type;
-    flex-direction: $direction;
-}
+@import "flex";
 
 $bgcol:#2f9ec6;
 
