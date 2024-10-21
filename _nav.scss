@@ -1,0 +1,37 @@
+@mixin ObjetoMg {
+    margin: 5px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #fcfcfc;
+    border-radius: 15px;
+    padding: 1px 15px;
+}
+.banner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    object-fit: contain;
+}
+.fila {
+    display: flex;
+    flex-direction: row;
+}
+.objeto-nav.b {
+    @include ObjetoMg();
+    background-color: #d1e7f5;
+    border-radius: 15px;
+}
+.objeto-nav.c {
+    @include ObjetoMg();
+    transition: transform 0.3s ease;
+}
+.objeto-nav.c:hover {
+    transform: scale(1.1);
+}
+nav img {
+    height: 100%;
+}
