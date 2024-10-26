@@ -139,10 +139,11 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 200px;
-    width: 400px;
+    height: 330px;
+    width: 500px;
     border-radius: 15px;
     margin-bottom: 10px;
+    
 
     animation-name: animate;
     animation-direction: alternate-reverse;
@@ -154,11 +155,14 @@ main {
 }
 @keyframes animate {
     0%  { background-image: url(/Resources/gif1.webp);}
-    20% { background-image: url(/Resources/gif5.gif);}
-    40% { background-image: url(/Resources/gif6.gif)}
-    60% { background-image: url(/Resources/gif7.gif)}
-    80% { background-image: url(/Resources/gif9.gif)}
-    100%{ background-image: url(/Resources/gif8.gif)}
+    20% { background-image: url(/Resources/gif2.webp);}
+    30% { background-image: url(/Resources/gif3.webp);}
+    40% { background-image: url(/Resources/gif4.gif)}
+    50% { background-image: url(/Resources/gif5.gif)}
+    60% { background-image: url(/Resources/gif6.gif)}
+    70% { background-image: url(/Resources/gif7.gif)}
+    90%{ background-image: url(/Resources/gif8.gif)}
+    100%{ background-image: url(/Resources/gif9.gif)}
 }
 
 @keyframes goup {
@@ -168,4 +172,15 @@ main {
     to {
         transform: translateY(-200px);
     }
+}
+.fila{
+    @include Flex-use(flex,row);
+}
+.fila2 {
+    @include Flex-use(flex,row);
+    background-color: $color_l;
+    border-radius: 15px;
+    padding: 10px;
+    @include animate(75%);
+    color: $color_d;
 }

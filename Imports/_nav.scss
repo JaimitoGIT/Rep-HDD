@@ -16,6 +16,9 @@ nav {
     @include Bg-style($bgcol);
     padding: 1px 15px;
     margin-bottom: 10px;
+    width: 97%;
+    position: fixed;
+    z-index: 100;
 }
 .banner {
     margin-top: 10px;
@@ -52,29 +55,13 @@ nav img {
         scale: 100%;
     }
 }
-@keyframes goup {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-100px);
-    }
-}
 .scroll-image {
+    margin-top: 110px;
     view-timeline: --image;
     view-timeline: block;
 
     animation-timeline: --image;
     animation-name: scroll2;
-    animation-range: cover 80%;
-    animation-fill-mode: both;
-}
-.scroll-image2 {
-    view-timeline: --image;
-    view-timeline: block;
-
-    animation-timeline: --image;
-    animation-name: goup;
-    animation-range: cover 70%;
+    animation-range: cover 75%;
     animation-fill-mode: both;
 }
