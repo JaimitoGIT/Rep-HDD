@@ -1,0 +1,18 @@
+@import "flex";
+
+$bgcol:#2f9ec6;
+
+footer {
+    @include Flex-use(flex,row);
+    justify-content:space-around;
+    height: 100px;
+    background-color: $bgcol;
+    border-radius: 15px;
+    padding: 1px 15px;
+}
+.fila {
+    @include Flex-use(flex,row);
+}
+.objeto-ft {
+    margin: 5px;
+}

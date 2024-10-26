@@ -1,0 +1,80 @@
+$bgcol: #fcfcfc;
+$bgcol2:#cdeafc;
+@mixin ObjetoMg {
+    margin: 5px;
+}
+@import "flex";
+@mixin Bg-style($background){
+    background-color: $background;
+    border-radius: 15px;
+}
+
+nav {
+    @include Flex-use(flex,row);
+    justify-content: space-between;
+    height: 100px;
+    @include Bg-style($bgcol);
+    padding: 1px 15px;
+    margin-bottom: 10px;
+}
+.banner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    object-fit: contain;
+}
+.fila {
+    @include Flex-use(flex,row);
+}
+.objeto-nav.b {
+    @include ObjetoMg();
+    @include Bg-style($bgcol2);
+    border-radius: 15px;
+}
+.objeto-nav.c {
+    @include ObjetoMg();
+    transition: transform 0.3s ease;
+}
+.objeto-nav.c:hover {
+    transform: scale(1.1);
+}
+nav img {
+    height: 100%;
+}
+/*--------------------------------*/
+@keyframes scroll2 {
+    from {
+        opacity: 1;
+        scale: 100%;
+    }
+    to {
+        opacity: 0;
+        scale: 100%;
+    }
+}
+@keyframes goup {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100px);
+    }
+}
+.scroll-image {
+    view-timeline: --image;
+    view-timeline: block;
+
+    animation-timeline: --image;
+    animation-name: scroll2;
+    animation-range: cover 80%;
+    animation-fill-mode: both;
+}
+.scroll-image2 {
+    view-timeline: --image;
+    view-timeline: block;
+
+    animation-timeline: --image;
+    animation-name: goup;
+    animation-range: cover 70%;
+    animation-fill-mode: both;
+}
