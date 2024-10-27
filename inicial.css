@@ -26,6 +26,21 @@ nav {
   z-index: 100;
 }
 
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.navbar-toggler {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 88px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  transform: scale(1.1);
+}
+
 .collapse {
   background-color: #fcfcfc;
   justify-content: center;
@@ -45,7 +60,7 @@ nav {
   margin: 5px;
   background-color: #cdeafc;
   border-radius: 15px;
-  border-radius: 15px;
+  border-radius: 50px;
 }
 
 .objeto-nav.c {
@@ -55,6 +70,27 @@ nav {
 
 .objeto-nav.c:hover {
   transform: scale(1.1);
+}
+
+@keyframes scroll2 {
+  from {
+    opacity: 1;
+    scale: 100%;
+  }
+  to {
+    opacity: 0;
+    scale: 100%;
+  }
+}
+.scroll-image {
+  margin-top: 10px;
+  width: 100%;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: scroll2;
+  animation-range: cover 75%;
+  animation-fill-mode: both;
 }
 
 /*------------------------------------------------------------------------------------------*/
