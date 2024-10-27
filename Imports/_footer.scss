@@ -1,2 +1,37 @@
+$color_l: #fcfcfc;
 $bgcol:#2f9ec6;
+$color_d: #2f6a9d;
 /*------------------------------------------------------------------------------------------*/
+@import "flex";
+@mixin BoxText-Use{
+    @include Flex-use(flex,column);
+    align-items: center;
+    flex-shrink: 6;
+    padding: 20px;
+    text-align: justify;
+}
+footer {
+    @include Flex-use(flex,row);
+    justify-content:space-around;
+    height: 100px;
+    background-color: $color_l;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-top: 10px;
+
+}
+.fila {
+    @include Flex-use(flex,row);
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.objeto-ft {
+    margin: 5px;
+}
+.boxtext {
+    @include BoxText-Use();
+}
+.boxtext.b {
+    color: $color_l;
+}

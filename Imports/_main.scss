@@ -3,6 +3,16 @@ $color_l: #fcfcfc;
 $color_m: #65b0c3;
 $color_d: #2f6a9d;
 /*------------------------------------------------------------------------------------------*/
+@mixin Box-use($bg) {
+    background-color: $bg;
+    @include Flex-use(flex,column);
+    border-radius: 15px;
+    gap: 50px;
+    object-fit: cover;
+    padding: 10px;
+    justify-content: center;
+    text-align: justify;
+}
 .container-fluid.m {
     margin-top: 10px;
 }
@@ -11,6 +21,22 @@ $color_d: #2f6a9d;
 }
 .carousel-item img {
     height: 400px;
-    width: 600px;
+    width: 550px;
     object-fit: cover;
+}
+.lbox1{
+    @include Box-use($color_d);
+    justify-content: flex-start;
+    align-items: center;
+    height: 770px;
+    width: 580px;
+}
+.lbox2{
+    @include Box-use($color_l);
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+.tableimg {
+    height: 100px;
 }

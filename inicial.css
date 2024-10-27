@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*------------------------------------------------------------------------------------------*/
 body {
   background-image: url(/Resources/longbg.jpg);
@@ -22,6 +21,7 @@ header {
   height: 100px;
   width: 100%;
   z-index: 100;
+  align-items: center;
 }
 
 nav {
@@ -35,11 +35,11 @@ nav {
 }
 
 .navbar {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #navbarToggleExternalContent {
-  max-height: 100px; /* Ajusta este valor según tus necesidades */
+  max-height: 100px;
   overflow: hidden;
 }
 
@@ -120,9 +120,81 @@ nav {
 
 .carousel-item img {
   height: 400px;
-  width: 600px;
+  width: 550px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-/*------------------------------------------------------------------------------------------*//*# sourceMappingURL=inicial.css.map */
+.lbox1 {
+  background-color: #2f6a9d;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+  justify-content: center;
+  text-align: justify;
+  justify-content: flex-start;
+  align-items: center;
+  height: 770px;
+  width: 580px;
+}
+
+.lbox2 {
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+  justify-content: center;
+  text-align: justify;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+}
+
+.tableimg {
+  height: 100px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+  background-color: #fcfcfc;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.objeto-ft {
+  margin: 5px;
+}
+
+.boxtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 6;
+  padding: 20px;
+  text-align: justify;
+}
+
+.boxtext.b {
+  color: #fcfcfc;
+}/*# sourceMappingURL=inicial.css.map */

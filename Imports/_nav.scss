@@ -21,6 +21,7 @@ header {
     height: 100px;
     width: 100%;
     z-index: 100;
+    align-items: center;
 }
 nav{
     background-color: $bgcol;
@@ -32,10 +33,10 @@ nav{
     
 }
 .navbar {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 #navbarToggleExternalContent {
-    max-height: 100px; /* Ajusta este valor según tus necesidades */
+    max-height: 100px;
     overflow: hidden;
   }
 .navbar-toggler {
