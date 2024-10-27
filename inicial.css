@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------------------------------------------------------------*/
 body {
   background-image: url(/Resources/longbg.jpg);
@@ -15,6 +16,12 @@ img {
 
 header {
   background-color: #fcfcfc;
+  position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100px;
+  width: 100%;
+  z-index: 100;
 }
 
 nav {
@@ -23,11 +30,17 @@ nav {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100px;
+  width: 100%;
   z-index: 100;
 }
 
 .navbar {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+#navbarToggleExternalContent {
+  max-height: 100px; /* Ajusta este valor según tus necesidades */
+  overflow: hidden;
 }
 
 .navbar-toggler {
@@ -49,7 +62,8 @@ nav {
 .fila {
   display: flex;
   flex-direction: row;
-  height: 90px;
+  height: 80px;
+  padding-bottom: 10px;
 }
 
 .fila img {
@@ -83,7 +97,7 @@ nav {
   }
 }
 .scroll-image {
-  margin-top: 10px;
+  margin-top: 110px;
   width: 100%;
   view-timeline: --image;
   view-timeline: block;
@@ -95,4 +109,20 @@ nav {
 
 /*------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------*/
+.container-fluid.m {
+  margin-top: 10px;
+}
+
+#carousel1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-item img {
+  height: 400px;
+  width: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*------------------------------------------------------------------------------------------*//*# sourceMappingURL=inicial.css.map */

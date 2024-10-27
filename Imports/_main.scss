@@ -3,3 +3,14 @@ $color_l: #fcfcfc;
 $color_m: #65b0c3;
 $color_d: #2f6a9d;
 /*------------------------------------------------------------------------------------------*/
+.container-fluid.m {
+    margin-top: 10px;
+}
+#carousel1 {
+    object-fit:cover;
+}
+.carousel-item img {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+}
