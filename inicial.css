@@ -1,48 +1,44 @@
+/*------------------------------------------------------------------------------------------*/
 body {
   background-image: url(/Resources/longbg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition: 5s;
-  padding: 0px;
-  font-family: "Montserrat", sans-serif;
-  color: #fcfcfc;
 }
 
+/*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
 img {
-  border-radius: 15px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
   height: 100%;
-  max-width: 100%;
+  border-radius: 15px;
+}
+
+header {
+  background-color: #fcfcfc;
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 100px;
   background-color: #fcfcfc;
-  border-radius: 15px;
-  padding: 1px 15px;
-  margin-bottom: 10px;
-  width: 97%;
   position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100px;
   z-index: 100;
 }
 
-.banner {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+.collapse {
+  background-color: #fcfcfc;
+  justify-content: center;
 }
 
 .fila {
   display: flex;
   flex-direction: row;
+  height: 90px;
+}
+
+.fila img {
+  height: 100%;
 }
 
 .objeto-nav.b {
@@ -61,319 +57,6 @@ nav {
   transform: scale(1.1);
 }
 
-nav img {
-  height: 100%;
-}
-
-/*--------------------------------*/
-@keyframes scroll2 {
-  from {
-    opacity: 1;
-    scale: 100%;
-  }
-  to {
-    opacity: 0;
-    scale: 100%;
-  }
-}
-.scroll-image {
-  margin-top: 110px;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: scroll2;
-  animation-range: cover 75%;
-  animation-fill-mode: both;
-}
-
 /*------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------*/
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-.objeto-main {
-  margin: 5px;
-}
-
-.bigbox1 {
-  display: grid;
-  grid-template-columns: 1095px 400px;
-  grid-template-rows: 350px 350px;
-  margin-bottom: 10px;
-  border-radius: 15px;
-  gap: 8px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.bigbox2 {
-  display: grid;
-  grid-template-columns: 385px 385px 718px;
-  grid-template-rows: 500px;
-  margin-bottom: 10px;
-  border-radius: 15px;
-  gap: 8px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.box_a {
-  background-color: #2f6a9d;
-  display: flex;
-  flex-direction: row;
-  border-radius: 15px;
-  gap: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 10px;
-  justify-content: center;
-  justify-content: flex-start;
-  color: #fcfcfc;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: goup;
-  animation-range: cover 70%;
-  animation-fill-mode: both;
-}
-
-.box_b {
-  background-color: #fcfcfc;
-  display: flex;
-  flex-direction: row;
-  border-radius: 15px;
-  gap: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 10px;
-  justify-content: center;
-  justify-content: flex-end;
-  color: #1c6f9c;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: goup;
-  animation-range: cover 78%;
-  animation-fill-mode: both;
-}
-
-.box_c {
-  background-color: #2f6a9d;
-  display: flex;
-  flex-direction: row;
-  border-radius: 15px;
-  gap: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 10px;
-  justify-content: center;
-  flex-direction: column;
-  color: #fcfcfc;
-  gap: 5px;
-  transition: transform 0.3s ease;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: goup;
-  animation-range: cover 78%;
-  animation-fill-mode: both;
-}
-
-.box_d {
-  background-color: #65b0c3;
-  display: flex;
-  flex-direction: row;
-  border-radius: 15px;
-  gap: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 10px;
-  justify-content: center;
-  flex-direction: column;
-  color: #fcfcfc;
-  gap: 5px;
-  transition: transform 0.3s ease;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: goup;
-  animation-range: cover 88%;
-  animation-fill-mode: both;
-}
-
-.box_e {
-  background-color: #fcfcfc;
-  display: flex;
-  flex-direction: row;
-  border-radius: 15px;
-  gap: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 10px;
-  justify-content: center;
-  flex-direction: column;
-  color: #1c6f9c;
-  gap: 0px;
-  transition: transform 0.3s ease;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: goup;
-  animation-range: cover 70%;
-  animation-fill-mode: both;
-}
-
-.box_e img {
-  padding: auto;
-  width: 88%;
-}
-
-.boxtext {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 6;
-  padding: 10px;
-  text-align: justify;
-}
-
-.boxtext_b {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 6;
-  padding: 10px;
-  text-align: justify;
-  justify-content: flex-start;
-}
-
-.barra {
-  background-color: #65b0c3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 10px;
-  border-radius: 15px;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: goup;
-  animation-range: cover 70%;
-  animation-fill-mode: both;
-}
-
-.box_c:hover {
-  transform: scale(1.03);
-}
-
-.box_d:hover {
-  transform: scale(1.03);
-}
-
-.box_e:hover {
-  transform: scale(1.01);
-}
-
-/*-----------------------*/
-.gifbox {
-  display: flex;
-  flex-direction: column;
-  background-image: url(/Resources/gif7.gif);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 330px;
-  width: 500px;
-  border-radius: 15px;
-  margin-bottom: 10px;
-  animation-name: animate;
-  animation-direction: alternate-reverse;
-  animation-duration: 25s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes animate {
-  0% {
-    background-image: url(/Resources/gif1.webp);
-  }
-  20% {
-    background-image: url(/Resources/gif2.webp);
-  }
-  30% {
-    background-image: url(/Resources/gif3.webp);
-  }
-  40% {
-    background-image: url(/Resources/gif4.gif);
-  }
-  50% {
-    background-image: url(/Resources/gif5.gif);
-  }
-  60% {
-    background-image: url(/Resources/gif6.gif);
-  }
-  70% {
-    background-image: url(/Resources/gif7.gif);
-  }
-  90% {
-    background-image: url(/Resources/gif8.gif);
-  }
-  100% {
-    background-image: url(/Resources/gif9.gif);
-  }
-}
-@keyframes goup {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-200px);
-  }
-}
-.fila {
-  display: flex;
-  flex-direction: row;
-}
-
-.fila2 {
-  display: flex;
-  flex-direction: row;
-  background-color: #fcfcfc;
-  border-radius: 15px;
-  padding: 10px;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: goup;
-  animation-range: cover 75%;
-  animation-fill-mode: both;
-  color: #2f6a9d;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 100px;
-  background-color: #2f9ec6;
-  border-radius: 15px;
-  padding: 1px 15px;
-}
-
-.fila {
-  display: flex;
-  flex-direction: row;
-}
-
-.objeto-ft {
-  margin: 5px;
-}/*# sourceMappingURL=inicial.css.map */
+/*------------------------------------------------------------------------------------------*//*# sourceMappingURL=inicial.css.map */
