@@ -184,9 +184,7 @@ nav {
   padding: 10px;
   justify-content: center;
   text-align: justify;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 400pxpx;
+  width: 420px;
   margin-top: 10px;
   view-timeline: --image;
   view-timeline: block;
@@ -196,7 +194,12 @@ nav {
   animation-fill-mode: both;
 }
 
+.lbox1.b {
+  margin-left: 150px;
+}
+
 .lbox2 {
+  margin-top: 10px;
   background-color: #fcfcfc;
   display: flex;
   flex-direction: column;
@@ -208,7 +211,7 @@ nav {
   justify-content: center;
   text-align: justify;
   justify-content: flex-start;
-  width: 891px;
+  width: 900px;
   align-items: center;
   padding: 5px;
   view-timeline: --image;
@@ -243,6 +246,14 @@ nav {
   background-color: #fcfcfc;
   border-radius: 5px;
   color: #293f53;
+}
+
+td {
+  width: 10px;
+}
+
+td img {
+  height: 81px;
 }
 
 /*------------------------------------------------------------------------------------------*/

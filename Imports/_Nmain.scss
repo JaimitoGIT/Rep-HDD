@@ -59,16 +59,18 @@ $color_dd: #293f53;
 }
 .lbox1{
     @include Box-use($color_d);
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 400pxpx;
+    width: 420px;
     margin-top: 10px;
     @include animate(80%);
 }
+.lbox1.b{
+    margin-left: 150px;
+}
 .lbox2{
+    margin-top: 10px;
     @include Box-use($color_l);
     justify-content: flex-start;
-    width: 891px;
+    width: 900px;
     align-items: center;
     padding: 5px;
     @include animate(80%);
@@ -93,4 +95,10 @@ $color_dd: #293f53;
     background-color: $color_l;
     border-radius: 5px;
     color: $color_dd;
+}
+td {
+    width: 10px;
+}
+td img {
+    height: 81px;
 }
