@@ -109,6 +109,20 @@ nav {
 
 /*------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------*/
+@keyframes goup {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}
+.objeto-main {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 5px;
+}
+
 .container-fluid.m {
   margin-top: 10px;
 }
@@ -125,6 +139,34 @@ nav {
      object-fit: cover;
 }
 
+.box_a {
+  margin-top: 10px;
+  background-color: #2bb3ed;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+  justify-content: center;
+  text-align: justify;
+  background-image: url(/Resources/estadio1b.jpeg);
+  background-position: bottom;
+  background-size: cover;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #fcfcfc;
+  height: 300px;
+  width: 100%;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: goup;
+  animation-range: cover 70%;
+  animation-fill-mode: both;
+}
+
 .lbox1 {
   background-color: #2f6a9d;
   display: flex;
@@ -138,8 +180,14 @@ nav {
   text-align: justify;
   justify-content: flex-start;
   align-items: center;
-  height: 770px;
+  height: 653px;
   width: 580px;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: goup;
+  animation-range: cover 80%;
+  animation-fill-mode: both;
 }
 
 .lbox2 {
@@ -154,12 +202,88 @@ nav {
   justify-content: center;
   text-align: justify;
   justify-content: flex-start;
+  width: 891px;
   align-items: center;
   padding: 5px;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: goup;
+  animation-range: cover 80%;
+  animation-fill-mode: both;
 }
 
-.tableimg {
-  height: 100px;
+th {
+  background-color: #2f6a9d;
+}
+
+td img {
+  height: 81px;
+}
+
+.wide-text {
+  width: 300px;
+}
+
+.card {
+  margin-left: 50px;
+  width: 380px;
+  margin-top: 10px;
+  padding-top: 8px;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: goup;
+  animation-range: cover 80%;
+  animation-fill-mode: both;
+}
+
+.card-body {
+  height: 300px;
+}
+
+.card img {
+  height: 270px;
+  border-radius: 15px;
+}
+
+.card-img-top {
+  padding: 10px;
+}
+
+.card-text {
+  background-color: #2f6a9d;
+  color: #fcfcfc;
+  height: 260px;
+  border-radius: 5px;
+  padding: 8px;
+  text-align: justify;
+}
+
+#carousel2 {
+  margin-left: 20px;
+  margin-top: 25px;
+  height: 400px;
+  width: 550px;
+  background-color: #2f6a9d;
+  border-radius: 5px;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: goup;
+  animation-range: cover 80%;
+  animation-fill-mode: both;
+}
+
+.carousel-caption h3 {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: #fcfcfc;
+}
+
+.carousel-item img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -172,6 +296,11 @@ footer {
   border-radius: 15px;
   padding: 10px 15px;
   margin-top: 10px;
+}
+
+.footerimg {
+  margin-top: 10px;
+  width: 100%;
 }
 
 .fila {
@@ -197,4 +326,21 @@ footer {
 
 .boxtext.b {
   color: #fcfcfc;
+}
+
+.boxtext.c {
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: #2f6a9d;
+  color: #fcfcfc;
+  border-radius: 5px;
+  width: 550px;
+}
+
+.boxtext.f {
+  height: 200px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.459);
+  color: #fcfcfc;
+  border-radius: 30px;
 }/*# sourceMappingURL=inicial.css.map */

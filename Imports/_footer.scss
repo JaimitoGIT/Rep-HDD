@@ -1,5 +1,5 @@
 $color_l: #fcfcfc;
-$bgcol:#2f9ec6;
+$bgcol:#50b5da;
 $color_d: #2f6a9d;
 /*------------------------------------------------------------------------------------------*/
 @import "flex";
@@ -20,6 +20,10 @@ footer {
     margin-top: 10px;
 
 }
+.footerimg {
+    margin-top: 10px;
+    width: 100%;
+}
 .fila {
     @include Flex-use(flex,row);
     padding: 10px;
@@ -34,4 +38,20 @@ footer {
 }
 .boxtext.b {
     color: $color_l;
+}
+.boxtext.c {
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: $color_d;
+    color: $color_l;
+    border-radius: 5px;
+    width: 550px;
+}
+.boxtext.f {
+    height: 200px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.459);
+    color: $color_l;
+    border-radius: 30px;
+    
 }

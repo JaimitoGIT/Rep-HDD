@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------------------------------*/
 $color_l: #fcfcfc;
-$color_m: #65b0c3;
+$color_m: #2bb3ed;
 $color_d: #2f6a9d;
 /*------------------------------------------------------------------------------------------*/
 @mixin Box-use($bg) {
@@ -13,6 +13,27 @@ $color_d: #2f6a9d;
     justify-content: center;
     text-align: justify;
 }
+@mixin animate($cover) {
+    view-timeline: --image;
+    view-timeline: block;
+
+    animation-timeline: --image;
+    animation-name: goup;
+    animation-range: cover $cover;
+    animation-fill-mode: both;
+}
+@keyframes goup {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-200px);
+    }
+}
+.objeto-main {
+    object-fit: cover;
+    margin: 5px;
+}
 .container-fluid.m {
     margin-top: 10px;
 }
@@ -24,19 +45,84 @@ $color_d: #2f6a9d;
     width: 550px;
     object-fit: cover;
 }
+.box_a {
+    margin-top: 10px;
+    @include Box-use($color_m);
+    background-image: url(/Resources/estadio1b.jpeg);
+    background-position: bottom;
+    background-size: cover;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: $color_l;
+    height: 300px;
+    width: 100%;
+    @include animate(70%);
+}
+
 .lbox1{
     @include Box-use($color_d);
     justify-content: flex-start;
     align-items: center;
-    height: 770px;
+    height: 653px;
     width: 580px;
+    @include animate(80%);
 }
 .lbox2{
     @include Box-use($color_l);
     justify-content: flex-start;
+    width: 891px;
     align-items: center;
     padding: 5px;
+    @include animate(80%);
 }
-.tableimg {
-    height: 100px;
+th {
+    background-color: #2f6a9d;
+}
+td img {
+    height: 81px;
+}
+.wide-text {
+    width: 300px;
+  }
+.card {
+    margin-left: 50px;
+    width: 380px;
+    margin-top: 10px;
+    padding-top: 8px;
+    @include animate(80%);
+}
+.card-body {
+    height: 300px;
+}
+.card img {
+    height: 270px;
+    border-radius: 15px;
+}
+.card-img-top {
+    padding: 10px;
+}
+.card-text{
+    background-color: $color_d;
+    color: $color_l;
+    height: 260px;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: justify;
+}
+#carousel2 {
+    margin-left: 20px;
+    margin-top: 25px;
+    height: 400px;
+    width: 550px;
+    background-color: $color_d;
+    border-radius: 5px;
+    @include animate(80%);
+}
+.carousel-caption h3{
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    color: $color_l;
+}
+.carousel-item img{
+    object-fit: contain;
 }
