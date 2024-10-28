@@ -1,0 +1,96 @@
+/*------------------------------------------------------------------------------------------*/
+$color_l: #fcfcfc;
+$color_m: #2bb3ed;
+$color_d: #2f6a9d;
+$color_dd: #293f53;
+/*------------------------------------------------------------------------------------------*/
+@mixin Box-use($bg) {
+    background-color: $bg;
+    @include Flex-use(flex,column);
+    border-radius: 15px;
+    gap: 50px;
+    object-fit: cover;
+    padding: 10px;
+    justify-content: center;
+    text-align: justify;
+}
+@mixin animate($cover) {
+    view-timeline: --image;
+    view-timeline: block;
+
+    animation-timeline: --image;
+    animation-name: goup;
+    animation-range: cover $cover;
+    animation-fill-mode: both;
+}
+@keyframes goup {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-200px);
+    }
+}
+.box_a {
+    @include Box-use($color_m);
+    background-image: url(/Resources/F6Zv1s4XoAAiE6D.jpg);
+    background-position: bottom;
+    background-size: cover;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: $color_l;
+    margin-top: 10px;
+    height: 300px;
+    width: 100%;
+    @include animate(70%);
+}
+.box_s {
+    @include Box-use($color_m);
+    background-image: url(/Resources/estadio2.jpeg);
+    background-position: center;
+    background-size: cover;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: $color_l;
+    margin-top: 10px;
+    height: 320px;
+    width: 1051px;
+    @include animate(70%);
+}
+.lbox1{
+    @include Box-use($color_d);
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 400pxpx;
+    margin-top: 10px;
+    @include animate(80%);
+}
+.lbox2{
+    @include Box-use($color_l);
+    justify-content: flex-start;
+    width: 891px;
+    align-items: center;
+    padding: 5px;
+    @include animate(80%);
+}
+#carousel1 {
+    height: 300px;
+    width: 400px;
+    object-fit:cover;
+   
+}
+.carousel-item img {
+    height: 200px;
+    width: 300px;
+    object-fit: contain;
+}
+.d-block{
+    align-items: center;
+}
+.position-relative{
+    margin-top: 20px;
+    padding: 5px;
+    background-color: $color_l;
+    border-radius: 5px;
+    color: $color_dd;
+}

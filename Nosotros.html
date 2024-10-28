@@ -4,114 +4,166 @@
         <title>Datazuma</title>
         <audio src="/Resources/ooth.mp3" autoplay loop></audio>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/CSS/nosotros.css">
+        <link rel="stylesheet" href="nosotros.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
 
     <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <header>
-            <nav>
-                <div class="objeto-nav"><img src="Resources/titulo.png" class="nav-Logo"></div>
-                <div class="objeto-nav"><img class="titulo" src="/Resources/datazuma.png" class="nav-Titulo"> </div>
-                <div class="objeto-nav b"><a href="/Inicial.html" title="Inicio"><img src="/Resources/Inicio.png" class="nav-Boton"></a></div>
-                <div class="objeto-nav b"><a href="/Login.html" title="Login"><img src="/Resources/login.png" class="nav-Boton"></a>    </div>
-                <div class="objeto-nav b"><a href="/Nosotros.html" title="Nosotros"><img src="/Resources/nosotros.png" class="nav-Boton"></a></div>  
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="p-4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="fila">
+                                    <div class="objeto-nav b"><img src="/Resources/datazuma.png"></div>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                            <div class="col">
+                                <div class="fila">
+                                    <div class="objeto-nav c"><a href="/Inicial.html"><img src="/Resources/Inicio.png"></a></div>
+                                    <div class="objeto-nav c"><a href="/Nosotros.html"><img src="/Resources/nosotros.png"></a></div>
+                                    <div class="objeto-nav c"><a href="/Login.html"><img src="/Resources/login.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a href="#navbarToggleExternalContent" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img  src="/Resources/titulo.png" alt="Toggle navigation">
+                    </a>
+                </div>
             </nav>
-            <img src="/Resources/banner 3.jpeg" class="banner">
         </header>
- 
+
         <main>
-            <div class="bigbox1">
-                <div class="box1">
-                    <div class="objeto-main"><img src="/Resources/Little_Gigant_emblem.webp"></div>
-                    <div class="objeto-main"><img src="/Resources/Gemini_Storm_emblem.webp"></div>
-                    <div class="objeto-main"><img src="/Resources/Zeus_emblem.webp"></div>
-                </div>
-                <div class="box1 b">
-                    <div class="boxtext">
-                        <h1>Nosotros</h1>
-                        <h3>Bienvenidos a DataZuma Inazuma Eleven Foro, el destino definitivo para todos los fans del emocionante mundo de Inazuma Eleven. Nuestra comunidad está dedicada a brindar la información más completa, precisa y actualizada sobre esta saga de juegos, anime y manga que ha capturado los corazones de tantos alrededor del mundo.</h3>
-                        <h1>Nuestra Misión</h1>
-                        <h3>Nuestro objetivo es ser la fuente número uno de información confiable sobre Inazuma Eleven. Queremos que esta wiki sea un recurso útil para nuevos fans y veteranos por igual, ofreciendo guías detalladas, perfiles de personajes, resúmenes de episodios y más.</h3>
-                        <h1>Nuestra Comunidad</h1>
-                        <h3>Además de proporcionar información detallada, creemos en la importancia de la interacción y la colaboración entre los fans. Invitamos a todos a participar en discusiones, compartir teorías, y contribuir con sus conocimientos. Juntos, podemos crear un lugar donde cada fan de Inazuma Eleven se sienta bienvenido y encuentre exactamente lo que está buscando.</h3>
-                    </div>
-                </div>
-                <div class="box1">
-                    <div class="objeto-main"><img src="/Resources/Ogre_emblem.webp"></div>
-                    <div class="objeto-main"><img src="/Resources/Neo_Japan_emblem.webp"></div>
-                    <div class="objeto-main"><img src="/Resources/LEVEL-GO_emblem.webp"></div>
-                </div>
+            <img class="scroll-image" src="/Resources/banner 3.jpeg">
+            <div class="box_a">
+				<div class="boxtext g"><h1> ¡Conocenos!</h1><h2>Bienvenidos a DataZuma Inazuma Eleven Foro, el destino definitivo para todos los fans del emocionante mundo de Inazuma Eleven. Nuestra comunidad está dedicada a brindar la información más completa, precisa y actualizada sobre esta saga de juegos, anime y manga que ha capturado los corazones de tantos alrededor del mundo.</h2></div>
+                <div class="objeto-main"><img src="/Resources/illustracion mark.png"></div>
             </div>
-            <div class="bigbox2">
-                <div class="box1 c">
-                    <div class="objeto-main b">
-                        <img src="/Resources/incono Mark.webp">
-                        <h2>¡Siempre estamos en busqueda de nuevos integrantes!</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="lbox1">
+                            <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="5000">
+                                        <img src="/Resources/icono erin.webp" class="rounded mx-auto d-block">
+                                        <div class="position-relative text-center">
+                                            <h5>Unetenos</h5>
+                                            <p>¡Siempre estamos en busqueda de nuevos integrantes!</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="5000">
+                                        <img src="/Resources/icono-simeon.png" class="rounded mx-auto d-block">
+                                        <div class="position-relative text-center">
+                                            <h5>Sigue en Contacto</h5>
+                                            <p>¡Siguenos en nuestras redes para novedades!</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="5000">
+                                        <img src="/Resources/icono-jude.png" class="rounded mx-auto d-block">
+                                        <div class="position-relative text-center">
+                                            <h5>Nuevas Experiencias</h5>
+                                            <p>¡Comparte tus jugadas favoritas con nosotros!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  	<span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                  	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  	<span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="box_s">
+                            <div class="boxtext e"><h1>Nuestra Misión</h1><h2>Nuestro objetivo es ser la fuente número uno de información confiable sobre Inazuma Eleven. Queremos que esta wiki sea un recurso útil para nuevos fans y veteranos por igual, ofreciendo guías detalladas, perfiles de personajes y más.</h2></div>
+                            <div class="objeto-main"><img src="/Resources/ilustracion riccardo 2.png"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="box1 d">
-                    <div class="objeto-main c">
-                        <img src="/Resources/icono jude.webp">
-                        <h2>¡Siguenos en nuestras redes para novedades!</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="lbox2">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th class="wide-text" colspan="2">VideoJuegos</th>
+                                        <th scope="col"></th>
+                                        <th scope="col">LOGOS</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td class="wide-text" colspan="2">Inazuma Eleven</td>
+                                        <td></td>
+                                        <td><img src="/Resources/Logo_Inazuma_Eleven.webp"></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td class="wide-text" colspan="2">Inazuma Eleven 2</td>
+                                        <td><img src="/Resources/titulo 2.png"></td>
+                                        <td></td>
+                                        <td><img src="/Resources/titulo 2alt.png"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">Inazuma Eleven 3</td>
+                                        <td><img src="/Resources/titulo 3.webp"></td>
+                                        <td><img src="/Resources/titulo 3alt2.png"></td>
+                                        <td><img src="/Resources/titulo 3alt.webp"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td colspan="2">Inazuma Eleven GO</td>
+                                        <td><img src="/Resources/IE_GO_Luz_Logo.webp"></td>
+                                        <td></td>
+                                        <td><img src="/Resources/IE_GO_Sombra_Logo.webp"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td colspan="2">Inazuma Eleven GO Chrono Stones</td>
+                                        <td><img src="/Resources/IE_GO_CS_Llamarada.webp"></td>
+                                        <td></td>
+                                        <td><img src="/Resources/IE_GO_CS_Trueno.webp"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td colspan="2">Inazuma Eleven GO Galaxy</td>
+                                        <td><img src="/Resources/galaxy logo1.png"></td>
+                                        <td></td>
+                                        <td><img src="/Resources/galaxy logo2.png"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <div class="box1 c">
-                    <div class="objeto-main b">
-                        <img src="/Resources/29_Kevin.webp">
-                        <h2>¡Comparte tus jugadas favoritas con nosotros!</h2>
-                    </div>
-                </div>
-                <div class="box1 d">
-                    <div class="objeto-main c">
-                        <img src="/Resources/icono victor.webp">
-                        <h2>¡Únete a nuestra comunidad y descubre más!</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="bigbox3">
-                <div class="box1 c">
-                    <div class="objeto-main b">
-                        <img src="/Resources/icono erin.webp">
-                        <h2>Tu fuente confiable para todo sobre Inazuma Eleven</h2>
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="boxtext2"><h1>Unete a Nuestra Comunidad</h1><h3>En la Inazuma Eleven Wiki, valoramos cada contribución y creemos que cada fan tiene una historia única que contar. Ya seas un veterano en la serie o un recién llegado, tu perspectiva es vital para nosotros. Únete a nuestra comunidad y comparte tus conocimientos, participa en discusiones apasionantes y ayuda a construir la base de datos más completa sobre el universo de Inazuma Eleven.</h3><h3>Desde perfiles de personajes hasta análisis de episodios y estrategias de juego, aquí encontrarás un espacio donde tu voz puede ser escuchada y apreciada. ¡Te esperamos con los brazos abiertos!</h3><h1>Conviértete en parte de algo grande</h1><h3> nuestra comunidad, valoramos la pasión y el entusiasmo. Cada pequeña contribución suma y nos ayuda a mantener viva la magia de Inazuma Eleven. Ya sea compartiendo tu teoría favorita, discutiendo tácticas de partidos o simplemente disfrutando de los recuerdos de la serie, tu participación es lo que hace que nuestra comunidad sea especial.</h3></div>
-                </div>
-                <div class="box1 c">
-                    <div class="objeto-main b">
-                        <img src="/Resources/icono simeon.webp">
-                        <h2>Actualizaciones constantes y contenido detallado</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="flexmap">
-                <div class="main-Box1">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d885.8983233686329!2d-70.3522993523588!3d-27.357180790545108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1728875608936!5m2!1ses-419!2scl" width="800" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="box1 d">
-                    <input id="iname" type="text" name="Nombre" placeholder="Nombre">
-                    <input id="imail" type="email" name="Correo" placeholder="Email">
-                    <input id="itext" type="text" name="asunto" placeholder="Asunto">
-                    <input id="mensaje" type="text" name="mensaje" placeholder="Mensaje">
                 </div>
             </div>
         </main>
         <footer>
-            <div class="footerbox">
-                <div class="box3">
-                    <a href="https://chat.whatsapp.com/Ensv97j866bGglSIs1e888 " target="_blank" title="Contactanos por WSP"><img src="/Resources/wsp icon.png"style="height: 50px"></a><h4>Contactanos via WhatsApp</h4>
-                </div>
-                <div class="box3">
-                    <a href="https://www.instagram.com/matias_aguilera_cuevas?igsh=N2hmeGo0MzJ5emYy" target="_blank" title="Contactanos por Instagram"><img src="/Resources/87390.png"style="height: 50px"></a><h4>Contactanos via Instagram</h4>
-                </div>
-                <div class="box3">
-                    <a href="https://www.facebook.com/" target="_blank" title="Contactanos por Facebook"><img src="/Resources/f.png"style="height: 50px"></a><h4>Contactanos via Facebook</h4>
-                </div>
+            <div class="fila">
+                <img src="/Resources/Neo_Japan_emblem.webp">
+                <div class="boxtext"><h2>Contactanos a travez de:</h2></div>
             </div>
-            <div class="footerbox b">
-                <h3>©2024 Matias Aguilera Cuevas</h3>
-            </div>
+            <div class="objeto-ft"><a href="https://chat.whatsapp.com/Ensv97j866bGglSIs1e888"><img src="/Resources/wsp icon.png" target="_blank"></a> </div>
+            <div class="objeto-ft"><a href="https://www.instagram.com/matias_aguilera_cuevas?igsh=N2hmeGo0MzJ5emYy"><img src="/Resources/87390.png" target="_blank"></a></div>
+            <div class="objeto-ft"><a href="https://www.facebook.com/"><img src="/Resources/f.png" target="_blank"></a>
         </footer>
     </body>
 </html>

@@ -343,4 +343,21 @@ footer {
   background: rgba(0, 0, 0, 0.459);
   color: #fcfcfc;
   border-radius: 30px;
+}
+
+.boxtext.g {
+  height: 280px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.459);
+  color: #fcfcfc;
+  border-radius: 30px;
+}
+
+.boxtext.e {
+  width: 900px;
+  height: 302px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.459);
+  color: #fcfcfc;
+  border-radius: 30px;
 }/*# sourceMappingURL=inicial.css.map */

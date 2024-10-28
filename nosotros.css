@@ -128,7 +128,7 @@ nav {
   padding: 10px;
   justify-content: center;
   text-align: justify;
-  background-image: url(/Resources/estadio1b.jpeg);
+  background-image: url(/Resources/F6Zv1s4XoAAiE6D.jpg);
   background-position: bottom;
   background-size: cover;
   flex-direction: row;
@@ -145,7 +145,58 @@ nav {
   animation-fill-mode: both;
 }
 
-.bigbox1 {
+.box_s {
+  background-color: #2bb3ed;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+  justify-content: center;
+  text-align: justify;
+  background-image: url(/Resources/estadio2.jpeg);
+  background-position: center;
+  background-size: cover;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #fcfcfc;
+  margin-top: 10px;
+  height: 320px;
+  width: 1051px;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: goup;
+  animation-range: cover 70%;
+  animation-fill-mode: both;
+}
+
+.lbox1 {
+  background-color: #2f6a9d;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+  justify-content: center;
+  text-align: justify;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 400pxpx;
+  margin-top: 10px;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: goup;
+  animation-range: cover 80%;
+  animation-fill-mode: both;
+}
+
+.lbox2 {
   background-color: #fcfcfc;
   display: flex;
   flex-direction: column;
@@ -156,14 +207,42 @@ nav {
   padding: 10px;
   justify-content: center;
   text-align: justify;
-  background-image: url(/Resources/estadio3.jpeg);
-  background-size: cover;
-  color: #fcfcfc;
-  margin-top: 10px;
+  justify-content: flex-start;
+  width: 891px;
+  align-items: center;
+  padding: 5px;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: goup;
+  animation-range: cover 80%;
+  animation-fill-mode: both;
 }
 
-#emailHelp {
-  color: #fcfcfc;
+#carousel1 {
+  height: 300px;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-item img {
+  height: 200px;
+  width: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.d-block {
+  align-items: center;
+}
+
+.position-relative {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  color: #293f53;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -240,4 +319,4 @@ footer {
   background: rgba(0, 0, 0, 0.459);
   color: #fcfcfc;
   border-radius: 30px;
-}/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=nosotros.css.map */
