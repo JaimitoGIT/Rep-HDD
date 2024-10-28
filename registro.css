@@ -1,0 +1,248 @@
+/*------------------------------------------------------------------------------------------*/
+body {
+  background-image: url(/Resources/longbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+img {
+  height: 100%;
+  border-radius: 15px;
+}
+
+header {
+  background-color: #fcfcfc;
+  position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100px;
+  width: 100%;
+  z-index: 100;
+  align-items: center;
+}
+
+nav {
+  background-color: #fcfcfc;
+  position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100px;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#navbarToggleExternalContent {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.navbar-toggler {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 88px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  transform: scale(1.1);
+}
+
+.collapse {
+  background-color: #fcfcfc;
+  justify-content: center;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  padding-bottom: 10px;
+}
+
+.fila img {
+  height: 100%;
+}
+
+.objeto-nav.b {
+  margin: 5px;
+  background-color: #cdeafc;
+  border-radius: 15px;
+  border-radius: 50px;
+}
+
+.objeto-nav.c {
+  margin: 5px;
+  transition: transform 0.3s ease;
+}
+
+.objeto-nav.c:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll2 {
+  from {
+    opacity: 1;
+    scale: 100%;
+  }
+  to {
+    opacity: 0;
+    scale: 100%;
+  }
+}
+.scroll-image {
+  margin-top: 110px;
+  width: 100%;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: scroll2;
+  animation-range: cover 75%;
+  animation-fill-mode: both;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+@keyframes goup {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}
+.box_a {
+  background-color: #2bb3ed;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+  justify-content: center;
+  text-align: justify;
+  background-image: url(/Resources/estadio1b.jpeg);
+  background-position: bottom;
+  background-size: cover;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #fcfcfc;
+  margin-top: 10px;
+  height: 300px;
+  width: 100%;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: goup;
+  animation-range: cover 70%;
+  animation-fill-mode: both;
+}
+
+.bigbox1 {
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+  justify-content: center;
+  text-align: justify;
+  background-image: url(/Resources/longbg.jpg);
+  background-size: cover;
+  color: #fcfcfc;
+  margin-top: 10px;
+}
+
+#emailHelp {
+  color: #fcfcfc;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  background: rgba(0, 0, 0, 0.35);
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+.colum {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.35);
+  justify-content: space-around;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+  background-color: #fcfcfc;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+.footerimg {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.objeto-ft {
+  margin: 5px;
+}
+
+.boxtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 6;
+  padding: 20px;
+  text-align: justify;
+}
+
+.boxtext.b {
+  color: #fcfcfc;
+}
+
+.boxtext.c {
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: #2f6a9d;
+  color: #fcfcfc;
+  border-radius: 5px;
+  width: 550px;
+}
+
+.boxtext.f {
+  height: 200px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.459);
+  color: #fcfcfc;
+  border-radius: 30px;
+}/*# sourceMappingURL=registro.css.map */

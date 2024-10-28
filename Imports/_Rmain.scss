@@ -1,0 +1,74 @@
+/*------------------------------------------------------------------------------------------*/
+$color_l: #fcfcfc;
+$color_m: #2bb3ed;
+$color_d: #2f6a9d;
+/*------------------------------------------------------------------------------------------*/
+@mixin Box-use($bg) {
+    background-color: $bg;
+    @include Flex-use(flex,column);
+    border-radius: 15px;
+    gap: 50px;
+    object-fit: cover;
+    padding: 10px;
+    justify-content: center;
+    text-align: justify;
+}
+@mixin animate($cover) {
+    view-timeline: --image;
+    view-timeline: block;
+
+    animation-timeline: --image;
+    animation-name: goup;
+    animation-range: cover $cover;
+    animation-fill-mode: both;
+}
+@keyframes goup {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-200px);
+    }
+}
+.box_a {
+    @include Box-use($color_m);
+    background-image: url(/Resources/estadio1b.jpeg);
+    background-position: bottom;
+    background-size: cover;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: $color_l;
+    margin-top: 10px;
+    height: 300px;
+    width: 100%;
+    @include animate(70%);
+}
+.bigbox1 {
+    @include Box-use($color_l);
+    background-image: url(/Resources/longbg.jpg);
+    background-size: cover;
+    color: $color_l;
+    margin-top: 10px;
+}
+#emailHelp {
+    color: $color_l;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.row2 {
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.35);
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.colum {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.35);
+    justify-content: space-around;
+    border-radius: 5px;
+    padding: 5px;
+}

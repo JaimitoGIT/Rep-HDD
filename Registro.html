@@ -4,122 +4,136 @@
         <title>Datazuma</title>
         <audio src="/Resources/shuuya goenji.mp3" autoplay loop></audio>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/CSS/estilos.css">
+        <link rel="stylesheet" href="registro.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
 
     <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <header>
-            <nav>
-                <div class="innav"><img src="Resources/titulo.png" class="nav-Logo"></div>
-                <div class="innav"><img src="/Resources/datazuma.png" class="nav-Titulo"></div>
-                <div class="innav"><a href="/Inicial.html" title="Inicio"><img src="/Resources/Inicio.png" class="nav-Boton"></a></div>
-                <div class="innav"><a href="/Login.html" title="Login"><img src="/Resources/login.png" class="nav-Boton"></a></div>
-                <div class="innav"><a href="/Nosotros.html" title="Nosotros"><img src="/Resources/nosotros.png" class="nav-Boton"></a></div>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="p-4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="fila">
+                                    <div class="objeto-nav b"><img src="/Resources/datazuma.png"></div>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                            <div class="col">
+                                <div class="fila">
+                                    <div class="objeto-nav c"><a href="/Inicial.html"><img src="/Resources/Inicio.png"></a></div>
+                                    <div class="objeto-nav c"><a href="/Nosotros.html"><img src="/Resources/nosotros.png"></a></div>
+                                    <div class="objeto-nav c"><a href="/Login.html"><img src="/Resources/login.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a href="#navbarToggleExternalContent" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img  src="/Resources/titulo.png" alt="Toggle navigation">
+                    </a>
+                </div>
             </nav>
-            <img src="/Resources/todos banner.png" class="banner">
         </header>
 
         <main>
-            <hr>
-            <div class="main4-bigbox">
-                <div class="main4-box1-b"></div>
-                <div class="main4-box1 central-box c">
-                    <form method="post">
-                        <div class="main4-bigbox">
-                            <div class="main-inbox1 b">
-                                <label for="iname">Nombre:</label><input id="iname" type="text" name="Nombre" value="">
-                            </div>
-                        </div>
-                        <div class="main4-bigbox">
-                            <div class="main-inbox1 b">
-                                <label for="isurname">Apellido:</label><input id="isurname" type="text" name="Apellido" value="">
-                            </div>
-                        </div>
-                        <div class="main4-bigbox">
-                            <div class="main-inbox1 b">
-                                <label for="iuser">Usuario:</label><input id="iuser" type="text" name="Usuario" value="">
-                            </div>
-                        </div>
-                        <div class="main4-bigbox">
-                            <div class="main-inbox1 b">
-                                <label for="ipass">Contraseña:</label><input id="ipass"type="password" name="Contraseña" value="">
-                            </div>
-                        </div>
-                        <div class="main4-bigbox">
-                            <div class="main-inbox1 b">
-                                <label for="imail">Email:</label><input id="imail" type="email" name="Correo" value="">
-                            </div>
-                        </div>
-                        <div class="main4-bigbox">
-                            <div class="main-inbox1 b">
-                                <label for="idate">Fecha de Nacimiento:</label><input id="idate" type="date" name="fecha" value="" style="width: 43%;">
-                            </div>
-                        </div>
-                        <div class="main4-bigbox">
-                            <div class="main-inbox1 b">
-                                <label for="itel">Numero de Contacto:</label><input id="itel" type="tel" name="telefono" value="">
-    
-                            </div>
-                        </div>
-                        <div class="main4-bigbox">
-                            <div class="main-inbox1 b">
-                                <label for="isex">Sexo:</label><select id="isex" name="sexos"><option value="Hombre">Hombre</option><option value="Mujer">Mujer</option>
-                            </div>
-                        </div>
-                        
-                        <div class="main4-bigbox">
-                            <div class="main-inbox1 b">
-                                <h1>Desea recibir:</h1>
-                                <input type="checkbox" id="inov" name="preferencias" value="rnov">
-                                <label for="inov">Novedades</label>
-                                <input type="checkbox" id="inov2" name="preferencias" value="snov">
-                                <label for="inov2">Seguidos</label>
-                                <input type="checkbox" id="inov3" name="preferencias" value="anov">
-                                <label for="inov3">Actualizaciones</label>
-                                <input type="checkbox" id="inov4" name="preferencias" value="nnov">
-                                <label for="inov4">Nada</label>
-                            </div>
-                        </div>
-                        <div class="main4-bigbox">
-                            <div class="main-inbox1 b">
-                                <label for="iimg">Seleccione una imagen de usuario</label><input type="file" id="iimg" name="profile img" accept=".jpg, .jpeg, .png">
-                            </div>
-                        </div>
-                        <div class="main4-bigbox">
-                            <div class="main-inbox1 b">
-                                <p><a href="" target="_blank"> ¿Aceptas los Terminos y Condiciones?</a></p><input id="iterm" type="radio" name="terminos" value=""><label for="iterm">Sí</label> <input id="itermn" type="radio" name="terminos" value="no_acepto"><label for="itermn">No</label>
-                            </div>
-                        </div>
-                        <div class="main4-bigbox">
-                            <div class="main-inbox1 b">
-                                <input type="submit">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="main4-box1-b"></div>
+            <img class="scroll-image" src="/Resources/F6Zv1s4XoAAiE6D.jpg">
+			<div class="box_a">
+				<div class="boxtext f"><h1> ¡Registro Datazuma!</h1><h2>Cuida tus datos y asegurate de no compartir tu contraseña con nadie.</h2></div>
+                <div class="objeto-main"><img src="/Resources/ilustracion riccardo 2.png"></div>
             </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col"></div>
+
+                    <div class="col">
+                        <div class="bigbox1">
+                            <form>
+                                <div class="mb-3"><label for="iname" class="form-label">Nombre</label><input type="text" class="form-control" id="iname"></div>
+                                <div class="mb-3"><label for="isurname" class="form-label">Apellido</label><input type="text" class="form-control" id="isurname"></div>
+                                <div class="mb-3"><label for="iuser" class="form-label">Nombre de Usuario</label><input type="text" class="form-control" id="iuser"></div>
+                                <div class="mb-3"><label for="ipassword" class="form-label">Contraseña</label><input type="password" class="form-control" id="ipassword"></div>
+                                <div class="mb-3"><label for="imail" class="email">Correo</label><input type="text" class="form-control" id="imail" aria-describedby="emailHelp"></div>
+                                <div class="mb-3"><label for="idate">Fecha de Nacimiento</label><input type="date" id="idate" class="form-control"></div>
+                                <div class="mb-3"><label for="inumber">Numero de Contacto</label><input type="tel" id="inumber" class="form-control"></div>
+                                <div class="mb-3">
+                                    <select class="form-select" aria-label="isex">
+                                        <option selected>Sexo</option>
+                                        <option value="1">Masculino</option>
+                                        <option value="2">Femenino</option>
+                                        <option value="3">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="colum">
+                                        <label>Notificaciones</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="1" id=inotif>
+                                            <label class="form-check-label" for="flexCheckDefault"><strong>Novedades</strong> </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="2" id="inotif2">
+                                            <label class="form-check-label" for="flexCheckChecked"><strong>Recibir Seguidos</strong></label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="3" id="inotif3">
+                                            <label class="form-check-label" for="flexCheckChecked"><strong>Recibir Actualizaciónes</strong></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="mb-3">
+                                        <label for="ifile" class="form-label">Imagen de Usuario</label>
+                                        <input class="form-control" type="file" id="ifile">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="row2">
+                                        <label>¿Aceptas Los Terminos y Condiciones?</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="iterm">
+                                            <label class="form-check-label" for="iterm"><strong>SI</strong></label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="iterm">
+                                            <label class="form-check-label" for="iterm"><strong>NO</strong></label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="mb-3">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col"></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
         </main>
         
         <footer>
-            <div class="footer-Box1">
-                <div class="footer-inbox1"><h2> Enlaces a Otros Sitios de Interés</h2></div>
-                <div class="footer-inbox1"><h2> Wikis De Inazuma Eleven</h2></div>
-                <div class="footer-inbox1"><h2> Novedades</h2></div>
-                <div class="footer-inbox1"><a href="https://chat.whatsapp.com/Ensv97j866bGglSIs1e888 " target="_blank" title="Contactanos por WSP"><img src="/Resources/wsp icon.png"style="height: 50px"></a></div>
-                <div class="footer-inbox1"><big>Inazuma Eleven es una gran Franquicia, desde anime a videojuegos y manga<br>Encuentra más información sobre Inazuma Eleven en estas paginas recomendadas!<br> </big></div>
-                <div class="footer-inbox1"><a href="https://inazuma.fandom.com/es/wiki/Inazuma_Eleven_Wiki" target="_blank">-Inazuma Eleven Fandom Wiki ESP</a><br><a href="https://inazuma-eleven.fandom.com/wiki/Inazuma_Eleven_Wiki" target="_blank">-Inazuma Eleven Fandom Wiki ENG</a><br><a href="https://es.wikipedia.org/wiki/Inazuma_Eleven" target="_blank">-Inazuma Eleven Wikipedia</a></div>
-                <div class="footer-inbox1"><a href="https://x.com/LEVEL5_times" target="_blank">-Twitter Level-5 JP</a><br><a href="https://x.com/ElevenEspanol" target="_blank">-Inazuma Eleven España</a><br><a href="https://www.level5.co.jp/vision2023/en/" target="_blank">-Level-5 Pagina web</a></div>
-                <div class="footer-inbox1"><a href="https://www.instagram.com/matias_aguilera_cuevas?igsh=N2hmeGo0MzJ5emYy" target="_blank" title="Contactanos por Instagram"><img src="/Resources/87390.png"style="height: 50px"></a></div>
-                <div class="footer-inbox1"></div>
-                <div class="footer-inbox1"></div>
-                <div class="footer-inbox1"></div>
-                <div class="footer-inbox1"><a href="https://www.facebook.com/" target="_blank" title="Contactanos por Facebook"><img src="/Resources/f.png"style="height: 50px"></a></div>
+            <div class="fila">
+                <img src="/Resources/Neo_Japan_emblem.webp">
+                <div class="boxtext"><h2>Contactanos a travez de:</h2></div>
             </div>
-            <hr>
-            <div class="main4-bigbox b">
-                <h3 width="100%">©2024 Matias Aguilera Cuevas</h3>
-            </div>
+            <div class="objeto-ft"><a href="https://chat.whatsapp.com/Ensv97j866bGglSIs1e888"><img src="/Resources/wsp icon.png" target="_blank"></a> </div>
+            <div class="objeto-ft"><a href="https://www.instagram.com/matias_aguilera_cuevas?igsh=N2hmeGo0MzJ5emYy"><img src="/Resources/87390.png" target="_blank"></a></div>
+            <div class="objeto-ft"><a href="https://www.facebook.com/"><img src="/Resources/f.png" target="_blank"></a>
         </footer>
     </body>
 </html>
