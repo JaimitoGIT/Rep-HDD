@@ -166,6 +166,25 @@ nav {
   color: #fcfcfc;
 }
 
+.modal-header img {
+  height: 50px;
+}
+
+.form-control {
+  width: 100px;
+}
+
+.modal-body {
+  background-image: url(/Resources/fondobp.png);
+  background-size: cover;
+  color: #fcfcfc;
+}
+
+.btn-primary {
+  background-color: #f49701 !important;
+  border-color: #dc8d0d !important;
+}
+
 /*------------------------------------------------------------------------------------------*/
 footer {
   display: flex;

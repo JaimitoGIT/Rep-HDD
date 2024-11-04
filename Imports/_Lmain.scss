@@ -2,6 +2,7 @@
 $color_l: #fcfcfc;
 $color_m: #2bb3ed;
 $color_d: #2f6a9d;
+$color_dd: #243a4e;
 /*------------------------------------------------------------------------------------------*/
 @mixin Box-use($bg) {
     background-color: $bg;
@@ -52,4 +53,19 @@ $color_d: #2f6a9d;
 }
 #emailHelp {
     color: $color_l;
+}
+.modal-header img{
+    height: 50px;
+}
+.form-control{
+    width: 100px;
+}
+.modal-body{
+    background-image: url(/Resources/fondobp.png);
+    background-size: cover;
+    color: $color_l;
+}
+.btn-primary {
+    background-color: #f49701 !important;
+    border-color: #dc8d0d !important;
 }

@@ -287,6 +287,84 @@ td img {
 }
 
 /*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+@keyframes goup {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}
+.box_a {
+  background-color: #2bb3ed;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+  justify-content: center;
+  text-align: justify;
+  background-image: url(/Resources/estadio1b.jpeg);
+  background-position: bottom;
+  background-size: cover;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #fcfcfc;
+  margin-top: 10px;
+  height: 300px;
+  width: 100%;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: goup;
+  animation-range: cover 70%;
+  animation-fill-mode: both;
+}
+
+.bigbox1 {
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+  justify-content: center;
+  text-align: justify;
+  background-image: url(/Resources/estadio3.jpeg);
+  background-size: cover;
+  color: #fcfcfc;
+  margin-top: 10px;
+}
+
+#emailHelp {
+  color: #fcfcfc;
+}
+
+.modal-header img {
+  height: 50px;
+}
+
+.form-control {
+  width: 100px;
+}
+
+.modal-body {
+  background-image: url(/Resources/fondobp.png);
+  background-size: cover;
+  color: #fcfcfc;
+}
+
+.btn-primary {
+  background-color: #f49701 !important;
+  border-color: #dc8d0d !important;
+}
+
+/*------------------------------------------------------------------------------------------*/
 footer {
   display: flex;
   flex-direction: row;
