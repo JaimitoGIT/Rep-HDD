@@ -256,6 +256,46 @@ td img {
   height: 81px;
 }
 
+.flexmap {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: #2f6a9d;
+  border-radius: 15px;
+  padding: 10px;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box1.d {
+  background-color: #fcfcfc;
+  justify-content: flex-start;
+  width: 400px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+iframe {
+  border-radius: 5px;
+}
+
+.ajuste1 {
+  margin-top: 340px;
+}
+
+.ajuste2 {
+  margin-top: 80px;
+  margin-left: 600px;
+}
+
+.flex {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
 /*------------------------------------------------------------------------------------------*/
 footer {
   display: flex;
