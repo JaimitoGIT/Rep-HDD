@@ -48,7 +48,7 @@ $color_d: #2f6a9d;
 .box_a {
     margin-top: 10px;
     @include Box-use($color_m);
-    background-image: url(/Resources/estadio1b.jpeg);
+    background-image: url(Resources/estadio1b.jpeg);
     background-position: bottom;
     background-size: cover;
     flex-direction: row;

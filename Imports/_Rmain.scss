@@ -32,7 +32,7 @@ $color_d: #2f6a9d;
 }
 .box_a {
     @include Box-use($color_m);
-    background-image: url(/Resources/estadio1b.jpeg);
+    background-image: url(Resources/estadio1b.jpeg);
     background-position: bottom;
     background-size: cover;
     flex-direction: row;
@@ -45,7 +45,7 @@ $color_d: #2f6a9d;
 }
 .bigbox1 {
     @include Box-use($color_l);
-    background-image: url(/Resources/longbg.jpg);
+    background-image: url(Resources/longbg.jpg);
     background-size: cover;
     color: $color_l;
     margin-top: 10px;

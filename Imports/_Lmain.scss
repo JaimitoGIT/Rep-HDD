@@ -33,7 +33,7 @@ $color_dd: #243a4e;
 }
 .box_a {
     @include Box-use($color_m);
-    background-image: url(/Resources/estadio1b.jpeg);
+    background-image: url(Resources/estadio1b.jpeg);
     background-position: bottom;
     background-size: cover;
     flex-direction: row;
@@ -46,7 +46,7 @@ $color_dd: #243a4e;
 }
 .bigbox1 {
     @include Box-use($color_l);
-    background-image: url(/Resources/estadio3.jpeg);
+    background-image: url(Resources/estadio3.jpeg);
     background-size: cover;
     color: $color_l;
     margin-top: 10px;
@@ -61,7 +61,8 @@ $color_dd: #243a4e;
     width: 100px;
 }
 .modal-body{
-    background-image: url(/Resources/fondobp.png);
+    background-image: url(Resources/fondobp.png);
+
     background-size: cover;
     color: $color_l;
 }

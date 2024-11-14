@@ -33,7 +33,7 @@ $color_dd: #293f53;
 }
 .box_a {
     @include Box-use($color_m);
-    background-image: url(/Resources/F6Zv1s4XoAAiE6D.jpg);
+    background-image: url(Resources/F6Zv1s4XoAAiE6D.jpg);
     background-position: bottom;
     background-size: cover;
     flex-direction: row;
@@ -46,7 +46,7 @@ $color_dd: #293f53;
 }
 .box_s {
     @include Box-use($color_m);
-    background-image: url(/Resources/estadio2.jpeg);
+    background-image: url(Resources/estadio2.jpeg);
     background-position: center;
     background-size: cover;
     flex-direction: row;

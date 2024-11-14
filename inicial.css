@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------------------------------*/
 body {
-  background-image: url(/Resources/longbg.jpg);
+  background-image: url(Resources/longbg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -151,7 +151,7 @@ nav {
   padding: 10px;
   justify-content: center;
   text-align: justify;
-  background-image: url(/Resources/estadio1b.jpeg);
+  background-image: url(Resources/estadio1b.jpeg);
   background-position: bottom;
   background-size: cover;
   flex-direction: row;
@@ -307,7 +307,7 @@ td img {
   padding: 10px;
   justify-content: center;
   text-align: justify;
-  background-image: url(/Resources/estadio1b.jpeg);
+  background-image: url(Resources/estadio1b.jpeg);
   background-position: bottom;
   background-size: cover;
   flex-direction: row;
@@ -335,7 +335,7 @@ td img {
   padding: 10px;
   justify-content: center;
   text-align: justify;
-  background-image: url(/Resources/estadio3.jpeg);
+  background-image: url(Resources/estadio3.jpeg);
   background-size: cover;
   color: #fcfcfc;
   margin-top: 10px;
@@ -354,7 +354,7 @@ td img {
 }
 
 .modal-body {
-  background-image: url(/Resources/fondobp.png);
+  background-image: url(Resources/fondobp.png);
   background-size: cover;
   color: #fcfcfc;
 }
@@ -371,7 +371,6 @@ footer {
   justify-content: space-around;
   height: 100px;
   background-color: #fcfcfc;
-  border-radius: 15px;
   padding: 10px 15px;
   margin-top: 10px;
 }
