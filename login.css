@@ -145,23 +145,6 @@ nav {
   animation-fill-mode: both;
 }
 
-.bigbox1 {
-  background-color: #fcfcfc;
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-  gap: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 10px;
-  justify-content: center;
-  text-align: justify;
-  background-image: url(Resources/estadio3.jpeg);
-  background-size: cover;
-  color: #fcfcfc;
-  margin-top: 10px;
-}
-
 #emailHelp {
   color: #fcfcfc;
 }

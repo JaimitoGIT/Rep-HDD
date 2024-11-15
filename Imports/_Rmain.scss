@@ -1,5 +1,6 @@
 /*------------------------------------------------------------------------------------------*/
 $color_l: #fcfcfc;
+$color_ld: #d2ecef;
 $color_m: #2bb3ed;
 $color_d: #2f6a9d;
 /*------------------------------------------------------------------------------------------*/
@@ -45,7 +46,7 @@ $color_d: #2f6a9d;
 }
 .bigbox1 {
     @include Box-use($color_l);
-    background-image: url(Resources/longbg.jpg);
+    background-image: url(Resources/vcr.jpg);
     background-size: cover;
     color: $color_l;
     margin-top: 10px;
@@ -70,5 +71,20 @@ $color_d: #2f6a9d;
     background: rgba(0, 0, 0, 0.35);
     justify-content: space-around;
     border-radius: 5px;
+    padding: 5px;
+}
+input {
+    background-color: rgba(0, 0, 0, 0.3) !important; 
+    border: 1px solid rgba(0, 0, 0, 0.816) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+select {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid rgba(0, 0, 0, 0.816) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+label{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3) !important;
     padding: 5px;
 }
