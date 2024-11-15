@@ -1,3 +1,13 @@
+<?php
+    include("Php/conexion.php");
+    $con=conectar();
+
+    $sql="SELECT * FROM usuarios";
+    $query=mysqli_query($con,$sql);
+    $row=mysqli_fetch_array($query);
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -70,17 +80,13 @@
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
 							<button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-							<a href="Registro.html" class="btn btn-primary" tabindex="-1" role="button">Registro</a>
+							<a href="Registro.php" class="btn btn-primary" tabindex="-1" role="button">Registro</a>
 						</div>
 					</form>	
 				</div>
 				</div>
 			</div>
-            <img class="scroll-image" src="Resources/F6Zv1s4XoAAiE6D.jpg">
-			<div class="box_a">
-				<div class="boxtext f"><h1> ¡Registro Datazuma!</h1><h2>Cuida tus datos y asegurate de no compartir tu contraseña con nadie.</h2></div>
-                <div class="objeto-main"><img src="Resources/ilustracion riccardo 2.png"></div>
-            </div>
+            <img class="scroll-image" src="Resources/banner 42.jpeg">
 
             <div class="container-fluid">
                 <div class="row">
@@ -88,15 +94,15 @@
 
                     <div class="col">
                         <div class="bigbox1">
-                            <form>
-                                <div class="mb-3"><label for="iname" class="form-label">Nombre</label><input type="text" class="form-control" id="iname"></div>
-                                <div class="mb-3"><label for="isurname" class="form-label">Apellido</label><input type="text" class="form-control" id="isurname"></div>
-                                <div class="mb-3"><label for="iuser" class="form-label">Nombre de Usuario</label><input type="text" class="form-control" id="iuser"></div>
-                                <div class="mb-3"><label for="ipassword" class="form-label">Contraseña</label><input type="password" class="form-control" id="ipassword"></div>
-                                <div class="mb-3"><label for="imail" class="email">Correo</label><input type="text" class="form-control" id="imail" aria-describedby="emailHelp"></div>
-                                <div class="mb-3"><label for="idate">Fecha de Nacimiento</label><input type="date" id="idate" class="form-control"></div>
+                            <form action="Php/insertar.php" method="post">
+                                <div class="mb-3"><label for="iname" class="form-label">Nombre</label>              <input type="text" class="form-control"     id="iname"     name="nombre"></div>
+                                <div class="mb-3"><label for="isurname" class="form-label">Apellido</label>         <input type="text" class="form-control"     id="isurname"  name="apellido"></div>
+                                <div class="mb-3"><label for="iuser" class="form-label">Nombre de Usuario</label>   <input type="text" class="form-control"     id="iuser"     name="usuario"></div>
+                                <div class="mb-3"><label for="ipassword" class="form-label">Contraseña</label>      <input type="password" class="form-control" id="ipassword" name="contraseña"></div>
+                                <div class="mb-3"><label for="imail" class="email">Correo</label>                   <input type="text" class="form-control"     id="imail"     name="correo"></div>
+                                <div class="mb-3"><label for="idate">Fecha de Nacimiento</label>                    <input type="date" class="form-control"     id="idate"     name="birthday"></div>
                                 <div class="mb-3">
-                                    <select class="form-select" aria-label="isex">
+                                    <select class="form-select" aria-label="isex" name="sexo">
                                         <option selected>Sexo</option>
                                         <option value="1">Masculino</option>
                                         <option value="2">Femenino</option>
