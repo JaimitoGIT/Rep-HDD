@@ -92,3 +92,9 @@ nav{
     animation-range: cover 75%;
     animation-fill-mode: both;
 }
+a img:hover{
+    transform: scale(1.05);
+}
+a img{
+    transition: transform 0.3s ease;
+}

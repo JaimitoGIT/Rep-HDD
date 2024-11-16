@@ -4,10 +4,11 @@
         $user = "root";
         $pass = "";
         $db = "pagina";
-        $conexion = new mysqli($server,$user,$pass,$db);
-        if ($conexion->connect_errno) {
-            die("La conexion ha fallado" . $conexion->connect_errno);
-        }
-        return $conexion;
+        
+        $con=mysqli_connect($server,$user,$pass);
+
+        mysqli_select_db($con,$db);
+
+        return $con;
     }
 ?>

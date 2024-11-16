@@ -96,18 +96,18 @@
                     <div class="col">
                         <div class="bigbox1">
                             <form action="Php/insertar.php" method="post">
-                                <div class="mb-3"><label for="iname" class="form-label">Nombre</label>              <input type="text" class="form-control"     id="iname"     name="nombre"></div>
-                                <div class="mb-3"><label for="isurname" class="form-label">Apellido</label>         <input type="text" class="form-control"     id="isurname"  name="apellido"></div>
-                                <div class="mb-3"><label for="iuser" class="form-label">Nombre de Usuario</label>   <input type="text" class="form-control"     id="iuser"     name="usuario"></div>
-                                <div class="mb-3"><label for="ipassword" class="form-label">Contraseña</label>      <input type="password" class="form-control" id="ipassword" name="contraseña"></div>
-                                <div class="mb-3"><label for="imail" class="email">Correo</label>                   <input type="text" class="form-control"     id="imail"     name="correo"></div>
-                                <div class="mb-3"><label for="idate">Fecha de Nacimiento</label>                    <input type="date" class="form-control"     id="idate"     name="birthday"></div>
+                                <div class="mb-3"><label for="iname"     class="form-label">Nombre</label>              <input type="text"     class="form-control"     id="iname"     name="nombre">     </div>
+                                <div class="mb-3"><label for="isurname"  class="form-label">Apellido</label>            <input type="text"     class="form-control"     id="isurname"  name="apellido">   </div>
+                                <div class="mb-3"><label for="iuser"     class="form-label">Nombre de Usuario</label>   <input type="text"     class="form-control"     id="iuser"     name="usuario">    </div>
+                                <div class="mb-3"><label for="ipassword" class="form-label">Contraseña</label>          <input type="password" class="form-control"     id="ipassword" name="contraseña"> </div>
+                                <div class="mb-3"><label for="imail"     class="email">Correo</label>                   <input type="text"     class="form-control"     id="imail"     name="correo">     </div>
+                                <div class="mb-3"><label for="idate"     class="form-label">Fecha de Nacimiento</label> <input type="date"     class="form-control"     id="idate"     name="nacimiento"> </div>
                                 <div class="mb-3">
                                     <select class="form-select" aria-label="isex" name="sexo">
                                         <option selected>Sexo</option>
-                                        <option value="1">Masculino</option>
-                                        <option value="2">Femenino</option>
-                                        <option value="3">Otro</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="femenino">Femenino</option>
+                                        <option value="otro">Otro</option>
                                     </select>
                                 </div>
                                 <div class="mb-3">

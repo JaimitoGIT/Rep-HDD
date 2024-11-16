@@ -4,7 +4,7 @@
 
     $sql="SELECT * FROM usuarios";
     $query=mysqli_query($con,$sql);
-    $row=mysqli_fetch_array($query);
+
 
 ?>
 <!DOCTYPE html>
@@ -49,7 +49,7 @@
             </nav>
         </header>
     <body>
-        <!-- Modal -->
+        <!-- Modal login -->
 			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 				<div class="modal-content">
@@ -82,17 +82,51 @@
 				</div>
 				</div>
 			</div>
+        <!-- Modal añadir -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<img src="Resources/añadir usuario title.png">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<form action="Php/insertar.php" method="post">
+						<div class="modal-body">
+                            <div class="bigbox1">
+                                <div class="mb-3"><label for="iname"     class="form-label">Nombre</label>              <input type="text"     class="form-control"     id="iname"     name="nombre">     </div>
+                                <div class="mb-3"><label for="isurname"  class="form-label">Apellido</label>            <input type="text"     class="form-control"     id="isurname"  name="apellido">   </div>
+                                <div class="mb-3"><label for="iuser"     class="form-label">Nombre de Usuario</label>   <input type="text"     class="form-control"     id="iuser"     name="usuario">    </div>
+                                <div class="mb-3"><label for="ipassword" class="form-label">Contraseña</label>          <input type="password" class="form-control"     id="ipassword" name="contraseña"> </div>
+                                <div class="mb-3"><label for="imail"     class="email">Correo</label>                   <input type="text"     class="form-control"     id="imail"     name="correo">     </div>
+                                <div class="mb-3"><label for="idate"     class="form-label">Fecha de Nacimiento</label> <input type="date"     class="form-control"     id="idate"     name="nacimiento"> </div>
+                                <div class="mb-3">
+                                    <select class="form-select" aria-label="isex" name="sexo">
+                                        <option selected>Sexo</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="femenino">Femenino</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+						</div>
+					</form>	
+				</div>
+				</div>
+			</div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <img class="scroll-image2" src="Resources/banner 5.jpeg">
         <!-- tablas y cosas -->
         <div class="box_panel">
-            <img src="Resources/panel-add.png">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="Resources/panel-add.png"></a>
         </div>
-        <div class="col-xl">
+
             <table class="table">
                 <thead class="table-success table-striped">
                     <tr>
-                        <th>Id        </th>
                         <th>Usuario   </th>
                         <th>Nombre    </th>
                         <th>Apellido  </th>
@@ -100,6 +134,8 @@
                         <th>Contraseña</th>
                         <th>Nacimiento</th>
                         <th>Sexo      </th>
+                        <th>Comandos  </th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -107,7 +143,6 @@
                         while($row=mysqli_fetch_array($query)){
                     ?>  
                         <tr>
-                            <th> <?php echo $row['id']         ?></th>
                             <th> <?php echo $row['usuario']    ?></th>
                             <th> <?php echo $row['nombre']     ?></th>
                             <th> <?php echo $row['apellido']   ?></th> 
@@ -115,14 +150,14 @@
                             <th> <?php echo $row['contraseña'] ?></th>
                             <th> <?php echo $row['nacimiento'] ?></th>
                             <th> <?php echo $row['sexo']       ?></th>
-                            <th> <a href="actualizar.php?id=<?php echo $row['id'] ?>" class="btn btn-info">editar</a> </th>
-                            <th> <a href="delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">eliminar</a> </th>
+                            <th> <a href="actualizar.php?id=<?php echo $row['usuario'] ?>" class="btn btn-info">editar</a> </th>
+                            <th> <a href="delete.php?id=<?php echo $row['usuario'] ?>" class="btn btn-danger">eliminar</a> </th>
                     <?php
                     }
                     ?>
                 </tbody>
             </table>
-        </div>
+
         
 
 

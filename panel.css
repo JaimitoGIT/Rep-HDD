@@ -106,6 +106,14 @@ nav {
   animation-fill-mode: both;
 }
 
+a img:hover {
+  transform: scale(1.05);
+}
+
+a img {
+  transition: transform 0.3s ease;
+}
+
 /*------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------*/
 @keyframes goup {
@@ -170,6 +178,49 @@ nav {
 
 table {
   margin-top: -9px;
+}
+
+.modal-header img {
+  height: 50px;
+}
+
+.form-control {
+  width: 100px;
+}
+
+#exampleModal .modal-body {
+  background-image: url(Resources/fondobp.png);
+  background-size: cover;
+  color: #fcfcfc;
+}
+
+#exampleModal .btn-primary {
+  background-color: #f49701 !important;
+  border-color: #dc8d0d !important;
+}
+
+#exampleModal2 .modal-body {
+  background-image: url(Resources/fondobp4.png);
+  background-position: 10%;
+  background-size: cover;
+  color: #fcfcfc;
+}
+
+#exampleModal2 .btn-primary {
+  background-color: #01a3f4 !important;
+  border-color: #0d7bdc !important;
+}
+
+#exampleModal2 input {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.816) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+#exampleModal2 select {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.816) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /*------------------------------------------------------------------------------------------*/
