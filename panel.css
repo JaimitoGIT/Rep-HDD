@@ -10,7 +10,6 @@ body {
 /*------------------------------------------------------------------------------------------*/
 img {
   height: 100%;
-  border-radius: 15px;
 }
 
 header {
@@ -96,17 +95,6 @@ nav {
     scale: 100%;
   }
 }
-.scroll-image {
-  margin-top: 110px;
-  width: 100%;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: scroll2;
-  animation-range: cover 75%;
-  animation-fill-mode: both;
-}
-
 .scroll-image2 {
   margin-top: 100px;
   width: 100%;
@@ -128,47 +116,23 @@ nav {
     transform: translateY(-200px);
   }
 }
-.objeto-main {
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: 5px;
-}
-
-.container-fluid.m {
-  margin-top: 10px;
-}
-
-#carousel1 {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.carousel-item img {
-  height: 400px;
-  width: 550px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.box_a {
-  margin-top: 10px;
+.box_panel {
   background-color: #2bb3ed;
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
   gap: 50px;
   -o-object-fit: cover;
      object-fit: cover;
   padding: 10px;
   justify-content: center;
   text-align: justify;
-  background-image: url(Resources/estadio1b.jpeg);
-  background-position: bottom;
-  background-size: cover;
+  background: rgba(255, 255, 255, 0.092);
+  margin-top: -146px;
   flex-direction: row;
   justify-content: flex-start;
+  padding-left: 250px;
   color: #fcfcfc;
-  height: 300px;
+  height: 155px;
   width: 100%;
   view-timeline: --image;
   view-timeline: block;
@@ -178,123 +142,34 @@ nav {
   animation-fill-mode: both;
 }
 
-.lbox1 {
-  background-color: #2f6a9d;
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-  gap: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 10px;
-  justify-content: center;
-  text-align: justify;
-  justify-content: flex-start;
-  align-items: center;
-  height: 653px;
-  width: 580px;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: goup;
-  animation-range: cover 80%;
-  animation-fill-mode: both;
+#emailHelp {
+  color: #fcfcfc;
 }
 
-.lbox2 {
-  background-color: #fcfcfc;
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  background: rgba(0, 0, 0, 0.35);
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+.colum {
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
-  gap: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 10px;
-  justify-content: center;
-  text-align: justify;
-  justify-content: flex-start;
-  width: 891px;
-  align-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  justify-content: space-around;
+  border-radius: 5px;
   padding: 5px;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: goup;
-  animation-range: cover 80%;
-  animation-fill-mode: both;
 }
 
-th {
-  background-color: #2f6a9d;
-}
-
-td img {
-  height: 81px;
-}
-
-.wide-text {
-  width: 300px;
-}
-
-.card {
-  margin-left: 50px;
-  width: 380px;
-  margin-top: 10px;
-  padding-top: 8px;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: goup;
-  animation-range: cover 80%;
-  animation-fill-mode: both;
-}
-
-.card-body {
-  height: 300px;
-}
-
-.card img {
-  height: 270px;
-  border-radius: 15px;
-}
-
-.card-img-top {
-  padding: 10px;
-}
-
-.card-text {
-  background-color: #2f6a9d;
-  color: #fcfcfc;
-  height: 260px;
-  border-radius: 5px;
-  padding: 8px;
-  text-align: justify;
-}
-
-#carousel2 {
-  margin-left: 20px;
-  margin-top: 25px;
-  height: 400px;
-  width: 550px;
-  background-color: #2f6a9d;
-  border-radius: 5px;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: goup;
-  animation-range: cover 80%;
-  animation-fill-mode: both;
-}
-
-.carousel-caption h3 {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  color: #fcfcfc;
-}
-
-.carousel-item img {
-  -o-object-fit: contain;
-     object-fit: contain;
+table {
+  margin-top: -9px;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -431,4 +306,4 @@ footer {
   background: rgba(0, 0, 0, 0.459);
   color: #fcfcfc;
   border-radius: 30px;
-}/*# sourceMappingURL=inicial.css.map */
+}/*# sourceMappingURL=panel.css.map */

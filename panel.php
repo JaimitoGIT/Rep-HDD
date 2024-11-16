@@ -7,20 +7,16 @@
     $row=mysqli_fetch_array($query);
 
 ?>
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Datazuma</title>
         <audio src="Resources/shuuya goenji.mp3" autoplay loop></audio>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="registro.css">
+        <link rel="stylesheet" href="panel.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
-
-    <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <header>
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="p-4">
@@ -48,13 +44,12 @@
                 <div class="container-fluid">
                     <a href="#navbarToggleExternalContent" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <img  src="Resources/titulo.png" alt="Toggle navigation">
-                    </a>
+                    </a>	
                 </div>
             </nav>
         </header>
-
-        <main>
-            <!-- Modal -->
+    <body>
+        <!-- Modal -->
 			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 				<div class="modal-content">
@@ -87,48 +82,53 @@
 				</div>
 				</div>
 			</div>
-            <img class="scroll-image" src="Resources/banner 42.jpeg">
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col"></div>
-
-                    <div class="col">
-                        <div class="bigbox1">
-                            <form action="Php/insertar.php" method="post">
-                                <div class="mb-3"><label for="iname" class="form-label">Nombre</label>              <input type="text" class="form-control"     id="iname"     name="nombre"></div>
-                                <div class="mb-3"><label for="isurname" class="form-label">Apellido</label>         <input type="text" class="form-control"     id="isurname"  name="apellido"></div>
-                                <div class="mb-3"><label for="iuser" class="form-label">Nombre de Usuario</label>   <input type="text" class="form-control"     id="iuser"     name="usuario"></div>
-                                <div class="mb-3"><label for="ipassword" class="form-label">Contraseña</label>      <input type="password" class="form-control" id="ipassword" name="contraseña"></div>
-                                <div class="mb-3"><label for="imail" class="email">Correo</label>                   <input type="text" class="form-control"     id="imail"     name="correo"></div>
-                                <div class="mb-3"><label for="idate">Fecha de Nacimiento</label>                    <input type="date" class="form-control"     id="idate"     name="birthday"></div>
-                                <div class="mb-3">
-                                    <select class="form-select" aria-label="isex" name="sexo">
-                                        <option selected>Sexo</option>
-                                        <option value="1">Masculino</option>
-                                        <option value="2">Femenino</option>
-                                        <option value="3">Otro</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col"></div>
-                </div>
-            </div>
-        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <img class="scroll-image2" src="Resources/banner 5.jpeg">
+        <!-- tablas y cosas -->
+        <div class="box_panel">
+            <img src="Resources/panel-add.png">
+        </div>
+        <div class="col-xl">
+            <table class="table">
+                <thead class="table-success table-striped">
+                    <tr>
+                        <th>Id        </th>
+                        <th>Usuario   </th>
+                        <th>Nombre    </th>
+                        <th>Apellido  </th>
+                        <th>Correo    </th>
+                        <th>Contraseña</th>
+                        <th>Nacimiento</th>
+                        <th>Sexo      </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        while($row=mysqli_fetch_array($query)){
+                    ?>  
+                        <tr>
+                            <th> <?php echo $row['id']         ?></th>
+                            <th> <?php echo $row['usuario']    ?></th>
+                            <th> <?php echo $row['nombre']     ?></th>
+                            <th> <?php echo $row['apellido']   ?></th> 
+                            <th> <?php echo $row['correo']     ?></th>
+                            <th> <?php echo $row['contraseña'] ?></th>
+                            <th> <?php echo $row['nacimiento'] ?></th>
+                            <th> <?php echo $row['sexo']       ?></th>
+                            <th> <a href="actualizar.php?id=<?php echo $row['id'] ?>" class="btn btn-info">editar</a> </th>
+                            <th> <a href="delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">eliminar</a> </th>
+                    <?php
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
         
-        <footer>
-            <div class="fila">
-                <img src="Resources/Neo_Japan_emblem.webp">
-                <div class="boxtext"><h2>Contactanos a travez de:</h2></div>
-            </div>
-            <div class="objeto-ft"><a href="https://chat.whatsapp.com/Ensv97j866bGglSIs1e888"><img src="Resources/wsp icon.png" target="_blank"></a> </div>
-            <div class="objeto-ft"><a href="https://www.instagram.com/matias_aguilera_cuevas?igsh=N2hmeGo0MzJ5emYy"><img src="Resources/87390.png" target="_blank"></a></div>
-            <div class="objeto-ft"><a href="https://www.facebook.com/"><img src="Resources/f.png" target="_blank"></a>
-        </footer>
+
+
+
+
+
+
     </body>
 </html>
