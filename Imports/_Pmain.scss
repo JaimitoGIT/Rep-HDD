@@ -101,5 +101,16 @@ table{
 #exampleModal2 select {
     background-color: rgba(255, 255, 255, 0.3) !important;
     border: 1px solid rgba(255, 255, 255, 0.816) !important;
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+}
+#mod3 .modal-body{
+    background-image: url(Resources/fondobp7.jfif);
+    height: 150px;
+    background-size: cover;
+    color: $color_l;
+}
+#mod3 .modal-body img{
+
+    object-fit: contain;
+    width: 300px;
 }

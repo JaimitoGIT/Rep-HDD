@@ -117,6 +117,8 @@
 				</div>
 				</div>
 			</div>
+        
+            
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <img class="scroll-image2" src="Resources/banner 5.jpeg">
         <!-- tablas y cosas -->
@@ -150,8 +152,28 @@
                             <th> <?php echo $row['contraseña'] ?></th>
                             <th> <?php echo $row['nacimiento'] ?></th>
                             <th> <?php echo $row['sexo']       ?></th>
-                            <th> <a href="actualizar.php?id=<?php echo $row['usuario'] ?>" class="btn btn-info">editar</a> </th>
-                            <th> <a href="delete.php?id=<?php echo $row['usuario'] ?>" class="btn btn-danger">eliminar</a> </th>
+                            <th> <a href="Php/actualizar.php?usuario=<?php echo $row['usuario'] ?>" class="btn btn-info">Editar       </a> </th>
+                            <th> <a data-bs-toggle="modal" data-bs-target="#mod3" class="btn btn-danger" > Eliminar      </a>          </th>
+                            
+                            <!-- Modal confirm -->
+                            <div class="modal fade" id="mod3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				                <div class="modal-dialog">
+				                    <div class="modal-content">
+					                    <div class="modal-header">
+                                            <img src="Resources/confirmar-eliminacion.png">
+					                    </div>
+					                    <div class="modal-body">					
+                                            <img src="Resources/texto.png">
+					                    </div>
+					                    <div class="modal-footer">
+						                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                                            <a href="Php/eliminar.php?usuario=<?php echo $row['usuario'] ?>" class="btn btn-danger">Confirmar</a>
+					                    </div>
+				                    </div>
+				                </div>
+			                </div>
+
+                        </tr>
                     <?php
                     }
                     ?>

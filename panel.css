@@ -220,68 +220,20 @@ table {
 #exampleModal2 select {
   background-color: rgba(255, 255, 255, 0.3) !important;
   border: 1px solid rgba(255, 255, 255, 0.816) !important;
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(0, 0, 0, 0.8) !important;
 }
 
-/*------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------*/
-@keyframes goup {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-200px);
-  }
-}
-.box_a {
-  background-color: #2bb3ed;
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-  gap: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 10px;
-  justify-content: center;
-  text-align: justify;
-  background-image: url(Resources/estadio1b.jpeg);
-  background-position: bottom;
-  background-size: cover;
-  flex-direction: row;
-  justify-content: flex-start;
-  color: #fcfcfc;
-  margin-top: 10px;
-  height: 300px;
-  width: 100%;
-  view-timeline: --image;
-  view-timeline: block;
-  animation-timeline: --image;
-  animation-name: goup;
-  animation-range: cover 70%;
-  animation-fill-mode: both;
-}
-
-#emailHelp {
-  color: #fcfcfc;
-}
-
-.modal-header img {
-  height: 50px;
-}
-
-.form-control {
-  width: 100px;
-}
-
-.modal-body {
-  background-image: url(Resources/fondobp.png);
+#mod3 .modal-body {
+  background-image: url(Resources/fondobp7.jfif);
+  height: 150px;
   background-size: cover;
   color: #fcfcfc;
 }
 
-.btn-primary {
-  background-color: #f49701 !important;
-  border-color: #dc8d0d !important;
+#mod3 .modal-body img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 300px;
 }
 
 /*------------------------------------------------------------------------------------------*/
