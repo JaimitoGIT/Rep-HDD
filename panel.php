@@ -11,6 +11,8 @@
     }
 
     $query = mysqli_query($con, $sql);
+
+	session_start();
 ?>
 
 <!DOCTYPE html>
@@ -36,8 +38,8 @@
                             <div class="col"></div>
                             <div class="col">
                                 <div class="fila">
-                                    <div class="objeto-nav c"><a href="index.html"><img src="Resources/Inicio.png"></a></div>
-                                    <div class="objeto-nav c"><a href="Nosotros.html"><img src="Resources/nosotros.png"></a></div>
+                                    <div class="objeto-nav c"><a href="index.php"><img src="Resources/Inicio.png"></a></div>
+                                    <div class="objeto-nav c"><a href="Nosotros.php"><img src="Resources/nosotros.png"></a></div>
                                     <div class="objeto-nav c"><a data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="Resources/login.png"></a></div>
                                     <div class="objeto-nav c"><a href="panel.php"><img src="Resources/panel2.png"></a></div>
                                 </div>
@@ -50,7 +52,17 @@
                 <div class="container-fluid">
                     <a href="#navbarToggleExternalContent" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <img  src="Resources/titulo.png" alt="Toggle navigation">
-                    </a>	
+                    </a>
+                    <div> 
+						<?php 
+							if (isset($_SESSION["usuario"])){
+								echo $_SESSION['usuario'];
+							}
+							else{
+								echo "No hay una sesion iniciada";
+							}
+						?>
+					</div>
                 </div>
             </nav>
         </header>
@@ -63,16 +75,15 @@
 						<img src="Resources/inicio sesion title.png">
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
-					<form>
+					<form action="Php/login.php" method="post" >
 						<div class="modal-body">					
 							<div class="mb-3 w-50">
-								<label for="imail" class="form-label"><strong>Dirección de Correo</strong></label>
-								<input type="email" class="form-control" id="imail" aria-describedby="emailHelp">
-								<div id="emailHelp" class="form-text">No compartiremos tu correo con nadie.</div>
+								<label for="iuser"     class="form-label"><strong>Nombre de Usuario</strong></label>
+								<input type="text"     class="form-control"     id="iuser"     name="usuario"    required>
 							</div>
 							<div class="mb-3 w-50">
 								<label for="ipassword" class="form-label"><strong>Contraseña</strong></label>
-								  <input type="password" class="form-control" id="ipassword">
+								<input type="password" class="form-control"     id="ipassword" name="contraseña" required>
 							</div>
 							<div class="mb-3 form-check">
 								  <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -80,9 +91,9 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
-							<button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-							<a href="Registro.php" class="btn btn-primary" tabindex="-1" role="button">Registro</a>
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal"    >Salir          </button>
+							<button type="submit" class="btn btn-primary"                              >Iniciar Sesión </button>
+							<a href="Registro.php" class="btn btn-primary" tabindex="-1" role="button" >Registro       </a>
 						</div>
 					</form>	
 				</div>

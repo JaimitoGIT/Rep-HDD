@@ -26,24 +26,11 @@
 
     if ($query_insert) {
         // Si el registro es exitoso, redirigir al panel de usuario
-        Header("Location: ../panel.php?success=usuario_creado");
+        Header("Location: ../Registro.php?success=usuario_creado");
     } else {
         // Si hay un error, redirigir al formulario con un mensaje de error
         Header("Location: ../Registro.php?error=error_registro");
     }
 
-    if(Header("Location: ../Registro.php")){
-        if($query){
-            Header("Location: ../Registro.php");
-        }else{
-        }
-    }else{
-    }
-    if(Header("Location: ../panel.php")){
-        if($query){
-            Header("Location: ../panel.php");
-        }else{
-        }
-    }
     
 ?>
