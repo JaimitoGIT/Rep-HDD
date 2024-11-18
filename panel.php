@@ -1,12 +1,18 @@
 <?php
     include("Php/conexion.php");
-    $con=conectar();
+    $con = conectar();
 
-    $sql="SELECT * FROM usuarios";
-    $query=mysqli_query($con,$sql);
+    $usuario_buscado = isset($_GET['usuario_buscado']) ? $_GET['usuario_buscado'] : '';
 
+    if (!empty($usuario_buscado)) {
+        $sql = "SELECT * FROM usuarios WHERE usuario LIKE '%$usuario_buscado%'";
+    } else {
+        $sql = "SELECT * FROM usuarios";
+    }
 
+    $query = mysqli_query($con, $sql);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -93,14 +99,14 @@
 					<form action="Php/insertar.php" method="post">
 						<div class="modal-body">
                             <div class="bigbox1">
-                                <div class="mb-3"><label for="iname"     class="form-label">Nombre</label>              <input type="text"     class="form-control"     id="iname"     name="nombre">     </div>
-                                <div class="mb-3"><label for="isurname"  class="form-label">Apellido</label>            <input type="text"     class="form-control"     id="isurname"  name="apellido">   </div>
-                                <div class="mb-3"><label for="iuser"     class="form-label">Nombre de Usuario</label>   <input type="text"     class="form-control"     id="iuser"     name="usuario">    </div>
-                                <div class="mb-3"><label for="ipassword" class="form-label">Contraseña</label>          <input type="password" class="form-control"     id="ipassword" name="contraseña"> </div>
-                                <div class="mb-3"><label for="imail"     class="email">Correo</label>                   <input type="text"     class="form-control"     id="imail"     name="correo">     </div>
-                                <div class="mb-3"><label for="idate"     class="form-label">Fecha de Nacimiento</label> <input type="date"     class="form-control"     id="idate"     name="nacimiento"> </div>
+                                <div class="mb-3"><label for="iname"     class="form-label">Nombre</label>              <input type="text"     class="form-control"     id="iname"     name="nombre" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" title="Solo se pueden letras" required>     </div>
+                                <div class="mb-3"><label for="isurname"  class="form-label">Apellido</label>            <input type="text"     class="form-control"     id="isurname"  name="apellido" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" title="Solo se pueden letras" required>   </div>
+                                <div class="mb-3"><label for="iuser"     class="form-label">Nombre de Usuario</label>   <input type="text"     class="form-control"     id="iuser"     name="usuario" required>    </div>
+                                <div class="mb-3"><label for="ipassword" class="form-label">Contraseña</label>          <input type="password" class="form-control"     id="ipassword" name="contraseña" required> </div>
+                                <div class="mb-3"><label for="imail"     class="email">Correo</label>                   <input type="text"     class="form-control"     id="imail"     name="correo" required>     </div>
+                                <div class="mb-3"><label for="idate"     class="form-label">Fecha de Nacimiento</label> <input type="date"     class="form-control"     id="idate"     name="nacimiento" required> </div>
                                 <div class="mb-3">
-                                    <select class="form-select" aria-label="isex" name="sexo">
+                                    <select class="form-select" aria-label="isex" name="sexo" required>
                                         <option selected>Sexo</option>
                                         <option value="masculino">Masculino</option>
                                         <option value="femenino">Femenino</option>
@@ -124,6 +130,12 @@
         <!-- tablas y cosas -->
         <div class="box_panel">
             <a data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="Resources/panel-add.png"></a>
+            <div>
+                <form method="GET" action="">
+                    <input input type="image" src="Resources/panel-search.png" style="height: 100px">
+                    <input type="text" class="form-control" id="iuser" name="usuario_buscado" placeholder="Nombre de Usuario">
+                </form>
+            </div>
         </div>
 
             <table class="table">
@@ -179,13 +191,5 @@
                     ?>
                 </tbody>
             </table>
-
-        
-
-
-
-
-
-
     </body>
 </html>

@@ -36,11 +36,17 @@ $color_d: #2f6a9d;
     margin-top: -146px;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: flex-start;
     padding-left: 250px;
+    padding-top: 5px;
+    padding-bottom: 10px;
     color: $color_l;
     height: 155px;
     width: 100%;
     @include animate(70%);
+}
+.box_panel img{
+    height: 100px;
 }
 #emailHelp {
     color: $color_l;
