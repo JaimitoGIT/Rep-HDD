@@ -25,6 +25,16 @@
                                     <div class="objeto-nav b"><img src="Resources/datazuma.png"></div>
                                 </div>
                             </div>
+                            <div class="col">
+								<div> 
+									<?php 
+										if (isset($_SESSION["usuario"])){
+											echo'<a href="Php/logout.php"><img class="objeto-nav c " style="height: 60px;"  src="Resources/cerrar.png"></a>';
+										}
+									?>
+								</div>
+								
+							</div>
                             <div class="col"></div>
                             <div class="col">
                                 <div class="fila">
