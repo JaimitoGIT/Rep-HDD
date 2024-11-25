@@ -1,6 +1,7 @@
 <?php
 	session_start();
     $_SESSION['code']=0;
+    $_SESSION['mensaje']=0;
 ?>
 
 <!DOCTYPE html>
@@ -94,6 +95,7 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal"    >Salir          </button>
+                            <a href="recuperacion.php" class="btn btn-secondary" tabindex="-1" role="button">Recuperar Contraseña </a>
 							<button type="submit" class="btn btn-primary"                              >Iniciar Sesión </button>
 							<a href="Registro.php" class="btn btn-primary" tabindex="-1" role="button" >Registro       </a>
 						</div>

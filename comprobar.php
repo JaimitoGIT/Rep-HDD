@@ -13,8 +13,8 @@
         session_destroy();
         session_start();
         $_SESSION['code']=0;
-        echo "Codigo Erroneo Vuelva a intentarlo";
-        Header("Location: recuperacion.php");
+        $_SESSION['mensaje']=2;
+        Header("Location: recuperacion.php");   
     }
     
 

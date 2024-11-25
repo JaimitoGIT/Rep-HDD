@@ -58,6 +58,27 @@ $color_d: #2f6a9d;
     width: 100%;
     @include animate(70%);
 }
+.box_b {
+    margin-top: 10px;
+    @include Box-use($color_m);
+    background-image: url(Resources/estadio1b.jpeg);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: $color_l;
+    height: 300px;
+    width: 100%;
+    @include animate(70%);
+}
+.box_b label{
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+}
+.box_b button{
+    margin-top: 10px;
+}
 
 .lbox1{
     @include Box-use($color_d);

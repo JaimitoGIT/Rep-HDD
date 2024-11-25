@@ -16,6 +16,7 @@
         session_destroy();
         session_start();
         $_SESSION['code']=0;
+        $_SESSION['mensaje']=1;
         header("Location: recuperacion.php");
     }
 ?>  
