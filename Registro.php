@@ -7,7 +7,7 @@
     $row=mysqli_fetch_array($query);
 
 	session_start();
-
+    $_SESSION['code']=0;
 ?>
 
 <!DOCTYPE html>
@@ -135,7 +135,7 @@
                                     </select>
                                 </div>
                                 <div class="mb-3">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
                                 </div>
                             </form>
                         </div>

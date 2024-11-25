@@ -38,7 +38,7 @@
                 <!-- Campo oculto para el usuario original -->
                 <input type="hidden" name="usuario_original" value="<?php echo $row['usuario'] ?>">
                 <a href="../panel.php" class="btn btn-secondary">Salir</a>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
             </div>
         </form>	
     </body>

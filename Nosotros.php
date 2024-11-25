@@ -1,5 +1,6 @@
 <?php
 	session_start();
+    $_SESSION['code']=0;
 ?>
 
 <!DOCTYPE html>
@@ -259,7 +260,7 @@
                             </div>
                             <div class="ajuste2">
                                 <div class="card">
-                                    <div class="card-header">Quote</div>
+                                    <div class="card-header">Frase</div>    
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0"><p>En el momento en que los seres humanos pensamos que no podemos hacerlo... Allí es exactamente cuando somos capaces de llevar a cabo todo nuestro potencial</p>
                                         <footer class="blockquote-footer">Mark Evans<cite title="Source Title">Inazuma Eleven 1</cite></footer></blockquote>

@@ -13,6 +13,7 @@
     $query = mysqli_query($con, $sql);
 
 	session_start();
+    $_SESSION['code']=0;
 ?>
 
 <!DOCTYPE html>
@@ -138,7 +139,7 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" class="btn btn-primary">guardar</button>
 						</div>
 					</form>	
 				</div>
