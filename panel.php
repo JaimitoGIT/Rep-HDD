@@ -188,7 +188,7 @@
                             <th> <?php echo $row['contraseña'] ?></th>
                             <th> <?php echo $row['nacimiento'] ?></th>
                             <th> <?php echo $row['sexo']       ?></th>
-                            <th> <a href="Php/actualizar.php?usuario=<?php echo $row['usuario'] ?>" class="btn btn-info">Editar       </a> </th>
+                            <th> <a href="actualizar.php?usuario=<?php echo $row['usuario'] ?>" class="btn btn-info">Editar       </a> </th>
                             <th> <a data-bs-toggle="modal" data-bs-target="#mod3" class="btn btn-danger" > Eliminar      </a>          </th>
                             
                             <!-- Modal confirm -->

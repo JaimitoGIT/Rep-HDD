@@ -10,11 +10,11 @@ body {
 /*------------------------------------------------------------------------------------------*/
 img {
   height: 100%;
+  border-radius: 15px;
 }
 
 header {
   background-color: #fcfcfc;
-  position: fixed;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100px;
@@ -25,7 +25,6 @@ header {
 
 nav {
   background-color: #fcfcfc;
-  position: fixed;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100px;
@@ -95,6 +94,17 @@ nav {
     scale: 100%;
   }
 }
+.scroll-image {
+  margin-top: 110px;
+  width: 100%;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: scroll2;
+  animation-range: cover 75%;
+  animation-fill-mode: both;
+}
+
 .scroll-image2 {
   margin-top: 100px;
   width: 100%;
@@ -106,12 +116,15 @@ nav {
   animation-fill-mode: both;
 }
 
-a img:hover {
-  transform: scale(1.05);
-}
-
-a img {
-  transition: transform 0.3s ease;
+.scroll-image3 {
+  margin-top: -10px;
+  width: 100%;
+  view-timeline: --image;
+  view-timeline: block;
+  animation-timeline: --image;
+  animation-name: scroll2;
+  animation-range: cover 75%;
+  animation-fill-mode: both;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -325,4 +338,4 @@ footer {
   background: rgba(0, 0, 0, 0.459);
   color: #fcfcfc;
   border-radius: 30px;
-}/*# sourceMappingURL=panel.css.map */
+}/*# sourceMappingURL=actualizar.css.map */
